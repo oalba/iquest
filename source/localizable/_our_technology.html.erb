@@ -1,0 +1,39 @@
+<div class="our-technology">
+  <h3 class="text-center" data-aos="fade-up"><%= t('pages.main.our_main_echnologies') %>:</h3>
+  <div class="cards">
+    <% url = I18n.locale == :en ? '/en/technology' : '/technologie' %>
+    <% link_to "#{url}/ruby-on-rails", :class => 'card half', :'data-aos' => 'fade-up' do %>
+      <div class="content ruby-on-rails"></div>
+      <div class="title">
+        Ruby on Rails
+      </div>
+    <% end  %>
+    <% link_to "#{url}/emberjs", :class => 'card half', :'data-aos' => 'fade-up' do %>
+      <div class="content emberjs"></div>
+      <div class="title">
+        Ember JS
+      </div>
+    <% end %>
+    <% link_to "#{url}/bootstrap", :class => 'card half', :'data-aos' => 'fade-up' do %>
+      <div class="content bootstrap"></div>
+      <div class="title">
+        Bootstrap
+      </div>
+    <% end %>
+    <% link_to "#{url}/sass", :class => 'card half', :'data-aos' => 'fade-up' do %>
+      <div class="content sass"></div>
+      <div class="title">
+        Sass
+      </div>
+    <% end %>
+    <% link_to "#{url}/cordova", :class => 'card half', :'data-aos' => 'fade-up' do %>
+      <div class="content cordova"></div>
+      <div class="title">
+        Apache Cordova
+      </div>
+    <% end %>
+  </div>
+  <% link_to t('urls.technology'), :class => 'more-technology text-blue', :'data-aos' => 'fade-up' do %>
+    <%= t('pages.main.more_about_technology') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+  <% end %>
+</div>

@@ -1,0 +1,62 @@
+---
+title: B2B/B2C portály
+subtitle: Vytvořte pro své zákazníky, partnery či dealery nové a moderní prostředí webového a mobilního portálu, kde najdou všechny potřebné informace.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">B2B/B2C portály</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Vytvořte pro své zákazníky, partnery či dealery nové a moderní prostředí webového a mobilního portálu, kde najdou všechny potřebné informace.</h3>
+    <p data-aos="fade-up"><b>Nechte své obchodní partnery, ať se přihlásí a nakupují za vlastní velkoobchodní ceny. Snadno si stáhnou své doklady a prohlédnou nabídky.</b></p>
+  </div>
+
+  <div class="info">
+    <div class="box left">
+      <img alt="Kdy potřebujete řešení na míru?" src="/images/app_kinds/b2b-b2c-portaly_1.jpg" data-aos="fade-right" />
+      <div class="offset" data-aos="fade-left">
+        <p><b>Jak B2B/B2C webové a mobilní portály využijete?</b></p>
+        <ul>
+          <li>Webové a mobilní prostředí plně integrované na vnitřní informační systém.</li>
+          <li>Možnost velkoobchodního/maloobchodního nákupu se zohledněním marže.</li>
+          <li>Rezervace služeb.</li>
+          <li>Přehled o stavu skladu a dodávkách zboží.</li>
+          <li>Zprostředkování individuálních obchodních nabídek.</li>
+          <li>Přehled objednávek, faktur a dalších dokladů.</li>
+          <li>Dokumenty ke stažení.</li>
+          <li>Objednání POS, reklamních předmětů.</li>
+          <li>Registrace k účasti na akcích.</li>
+          <li>Tvorba maloobchodních nabídek s rezervací skladových zásob.</li>
+          <li>A mnoho dalšího.</li>
+        </ul>
+        <p><a href="/kontakt">Poptejte iQuest, který má 13 let zkušeností s návrhem, vývojem a integrací B2B/B2C portálů.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

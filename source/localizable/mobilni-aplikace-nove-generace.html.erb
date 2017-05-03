@@ -1,0 +1,93 @@
+---
+title: iQuest - Vyvíjíme mobilní aplikace nové generace
+subtitle: Ideální řešení pro Vaše podnikání.
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Vyvíjíme mobilní aplikace nové generace</h1>
+    <h2 data-aos="fade-up">Ideální řešení pro Vaše podnikání</h2>
+    <div class="row">
+      <div class="col-offset-10 col-40 icons" data-aos="fade-right">
+        <% link_to t('urls.mobilni_aplikace'), :class => 'box' do %>
+        <div class="img-wrap">
+          <img alt="Phone_with_hand_128" src="/images/Phone_with_Hand_128.png">
+        </div>
+        <div class="text">Podnikové mobilní<br /> aplikace</div>
+        <% end %>
+      </div>
+      <div class="col-40 icons" data-aos="fade-left">
+        <% link_to t('urls.verejne_aplikace'), :class => 'box' do %>
+        <div class="img-wrap">
+          <img alt="Phone_with_hand_128" src="/images/Phone_with_Hand_128.png">
+        </div>
+        <div class="text">Veřejně dostupné<br /> mobilní aplikace</div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <%= partial 'kinds_of_products' %>
+
+  <div class="info">
+    <div class="box left v-center">
+      <img alt="Enterprise_mobile_applications_1" src="/images/enterprise_mobile_applications_1.jpg" data-aos="fade-right" />
+      <div class="offset" data-aos="fade-left">
+        <h3>Jaký je rozdíl našich mobilních aplikací oproti běžným?</h3>
+        <p>
+          <b>Používáme speciální technologie (Cordova, Bootstrap, EmberJS) pro rychlý vývoj.</b> Co nejjednodušší vzhled pro použití při každodenní práci. Jednoduché a rychlé ovládání. Snadné a rychlé provádění změn a úprav v reálném čase. Obvykle napojení na vnitrofiremní, či jiný systém.
+          <br /><br />
+          Tvoříme mobilní aplikace pro všechny platformy najednou. Hybridní způsob vývoje pomáhá ušetřit čas, snížit náklady na vývoj a zlepšit kvalitu software díky snadnému testování a údržbě.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="we-are-the-champions" data-aos="fade-up">
+    <div class="text-green">Specializované technologie</div>
+    <div class="text-green">Rychlý vývoj</div>
+    <div class="text-green">Okamžitá realizace požadavků</div>
+    <div class="text-green">Přehledné a jednoduché ovládání</div>
+  </div>
+  <div class="info">
+    <div class="box right v-center">
+      <img alt="Enterprise_mobile_applications_1" src="/images/enterprise_mobile_applications_2.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>V čem jsou naše podnikové mobilní aplikace jiné?</b></p>
+        <ul>
+          <li>Na rozdíl od klasických vývojových nástrojů využíváme <b>specializované moderní frameworky</b>.</li>
+          <li>Jednu aplikaci umíme nasadit na více platforem (<b>Android, iPhone, Windows</b>). <b>Šetříme za vývoj</b>.</li>
+          <li>Technologie mají shodný základ jako při vývoji webu. <b>Umožňují snadnou implementaci změn</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h3 class="text-green mobile-h3" data-aos="fade-up">Využijte jednu mobilní aplikaci na více platformách.<br />Ušetřte za vývoj.</h3>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+
+  $('.icons .box').on('mouseenter', function() {
+    $(this).find('img').addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).find('img').removeClass('animated pulse');
+  })
+</script>

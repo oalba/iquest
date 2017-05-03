@@ -1,0 +1,55 @@
+---
+title: Webové dispečinky
+subtitle: Krabicových systémů pro dispečinky příliš nenajdete. Každý business je specifický a potřebuje své. A z toho důvodu jsme již několik propracovných dispečinků vytvořili.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Webové dispečinky</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Krabicových systémů pro dispečinky příliš nenajdete. Každý business je specifický a potřebuje své. My jsme již několik propracovaných dispečinků vytvořili.</h3>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Webové dispečinky" src="/images/app_kinds/web_dispatching_1.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Dispečink na míru oceníte, když:</b></p>
+        <ul>
+          <li>Potřebujete přiřazovat pracovníky na zakázky.</li>
+          <li>Je třeba dobře řídit provoz dopravních prostředků.</li>
+          <li>Vyžadujete automatizaci přiřazování svých zdrojů na zakázky.</li>
+          <li>Už vám díky růstu nestačí stávající systém.</li>
+          <li>Toužíte po jednoduchosti, rychlosti, přehlednosti.</li>
+        </ul>
+        <p><a href="/kontakt">Rádi se toho chopíme.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

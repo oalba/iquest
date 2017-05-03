@@ -1,0 +1,72 @@
+<aside id="menu">
+  <ul class="lang">
+      <li>CZ</li>
+      <li>EN</li>
+  </ul>
+  <div id="menu-close">
+    <span class="text-green font-medium">MENU</span> <img alt="Close" src="/images/close.png" />
+  </div>
+  <ul>
+    <% link_to t('urls.home'), class: 'hide' do %>
+      <li>
+        <%= t('menu.home') %>
+      </li>
+    <% end %>
+    <% link_to t('urls.iquest_way'), class: 'hide' do %>
+      <li>
+        <%= t('menu.iquest_way') %>
+      </li>
+    <% end %>
+    <% link_to t('urls.why_iquest'), class: 'hide' do %>
+      <li>
+        <%= t('menu.why_iquest') %>
+      </li>
+    <% end %>
+    <% link_to t('urls.reference'), class: 'hide' do %>
+      <li>
+        <%= t('menu.reference') %>
+      </li>
+    <% end %>
+    <% link_to t('urls.technology') do %>
+      <li>
+        <%= t('menu.technology') %>
+      </li>
+    <% end %>
+    <% link_to "http://www.1vyvoj.cz/" do %>
+      <li>
+        1vyvoj.cz
+      </li>
+    <% end %>
+    <% link_to t('urls.not_only_money') do %>
+      <li>
+        <%= t('menu.not_only_money') %>
+      </li>
+    <% end %>
+    <% link_to t('urls.join_us') do %>
+      <li>
+        <%= t('menu.join_us') %>
+      </li>
+    <% end %>
+    <% link_to t('urls.blog'), class: 'hide' do %>
+      <li>
+        <%= t('menu.blog') %>
+      </li>
+    <% end %>
+    <% link_to t('urls.contact'), class: 'hide' do %>
+      <li>
+        <%= t('menu.contact') %>
+      </li>
+    <% end %>
+  </ul>
+</aside>
+<script type="text/javascript">
+$( window ).resize(menu_change);
+$( window ).load(menu_change);
+function menu_change() {
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $('.hide').show();
+  } else {
+    $('.hide').hide();
+  }
+}
+</script>

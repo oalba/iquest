@@ -1,0 +1,113 @@
+---
+title: iQuest - Why iQuest
+subtitle: Strong in analysis, сreative in design, precise during development, reliable in supporting.
+---
+<div class="content">
+  <div class="pillar pillar-1 yellow-dark">
+    <img height="90" width="91" alt="Iquest_circle1" src="/images/iquest_circle1.png" />
+    <h1><b>Strong</b> in analysis </h1>
+    <h2>Preparation makes up 60% of work and 80% of success.</h2>
+    <p>We create systems based on either method of Waterfalls, when there are known all the requirements in advance or the form of Agile development so the customer modifies the order during the work with us and affects the functionality of the follow up modules.</p>
+    <p>
+      <% link_to t('urls.contact'), :id => 'pillars_kontakt_block_1', :class => 'contact-us green hvr-pulse-grow' do %>
+        <%= t('pages.contact.contact_us') %> <i class="fa fa-phone"></i>
+      <% end  %>
+    </p>
+  </div>
+  <div class="pillar pillar-2 orange-dark">
+    <img height="90" width="91" alt="Iquest_circle2" src="/images/iquest_circle2.png" />
+    <h1><b>Creative</b> in design</h1>
+    <h2>The system must be modern and sexy.</h2>
+    <p>We combine the knowledge from previous research, we follow modern trends, we use the best technologies.</p>
+    <p>This produces systems that are not only in terms of technology at the highest level, but meet standards in terms of user control (user experience).</p>
+    <p>Any system that  passed through iQuest way, was proposed by an experienced graphic designer, a specialist in the field. The user interface is compact, simple and consistent, so that the user works comfortable and very pleasantly with the system.</p>
+    <p>
+      <% link_to t('urls.contact'), :id => 'pillars_kontakt_block_2', :class => 'contact-us green hvr-pulse-grow' do %>
+        <%= t('pages.contact.contact_us') %> <i class="fa fa-phone"></i>
+      <% end  %>
+    </p>
+  </div>
+  <div class="pillar pillar-3 green-dark">
+    <img height="90" width="91" alt="Iquest_circle3" src="/images/iquest_circle3.png" />
+    <h1><b>Precise</b> during development</h1>
+    <h2>IQuest way ensures a clean and fully functional source code.</h2>
+    <p>We recognize common standards in the development of systems and we expand  within iQuest way with its own methodology of internal communication and control of individual team members so that we can write clean code based on the needs of long-term maintenance and development of the systems. We pay attention to the speed and safety of each component source code.</p>
+    <p><b>Given IQuest development includes:</b></p>
+    <ul>
+      <li>Architecture design and smaller implementations done by the most experienced system architects.</li>
+      <li>Choice of integrated technology and services so that we keep technologicaly moving one step further.</li>
+      <li>Sensitively built team so that there is each part operated by best developer who has specific tasks widest experience.</li>
+      <li>Feedback control of the source code and any refactoring before delivery to the client.</li>
+      <li>Thorough testing of automated tools and precision testers.</li>
+    </ul>
+    <p>
+      <% link_to t('urls.contact'), :id => 'pillars_kontakt_block_3', :class => 'contact-us orange hvr-pulse-grow' do %>
+        <%= t('pages.contact.contact_us') %> <i class="fa fa-phone"></i>
+      <% end  %>
+    </p>
+  </div>
+  <div class="pillar pillar-4 blue-dark">
+    <img height="90" width="91" alt="Iquest_circle4" src="/images/iquest_circle4.png" />
+    <h1><b>Reliable</b> in supporting</h1>
+    <h2>Experts available throughout the entire life cycle of the system...</h2>
+    <p>iQuest way System is a long-term client support during deployment, operation and development of our systems.</p>
+    <p>We communicate with prospective users before deploying of the new information system, we work on their prior adaptation and training, so the fundamental change in their work is pleasant for them and they were excited about the new possibilities offered by the system.</p>
+    <p>The customer has always the liaison to consult with common operational things or complicated tasks regarding the adjustments and system development during operation.</p>
+    <p>
+      <% link_to t('urls.contact'), :id => 'pillars_kontakt_block_4', :class => 'contact-us orange hvr-pulse-grow' do %>
+        <%= t('pages.contact.contact_us') %> <i class="fa fa-phone"></i>
+      <% end  %>
+    </p>
+  </div>
+  <a href="/index" class="to-home"></a>
+</div>
+
+<script>
+  //pillar open toggle
+  $('.pillar').click(function() {
+    if (!$('.pillar').hasClass('active')) {
+      $('.navigation .navbar .back').remove();
+      $(this).addClass('active animate');
+      active_close_btn();
+    } else {
+      if (!$('.pillar').hasClass('animate')) {
+        $(this).removeClass('active');
+        $('.navigation .navbar .close').remove();
+        active_back_btn();
+      }
+    }
+  }).on('transitionend', function() {
+    $(this).removeClass('animate')
+  });
+
+  $(document).on('click', '.navigation .navbar .close', function() {
+    $('.pillar.active').removeClass('active');
+    $(this).remove();
+    active_back_btn();
+  });
+
+  //open pillar from url
+  var pillar_active = getUrlParameter('pillar');
+
+  if (pillar_active !== 'undefined' && (pillar_active == 1 ||
+      pillar_active == 2 ||
+      pillar_active == 3 ||
+      pillar_active == 4)) {
+    active_close_btn();
+    $('.pillar').eq(pillar_active - 1).addClass('active animate');
+  } else {
+    active_back_btn();
+  }
+
+  function active_back_btn() {
+    $('.navigation .navbar').prepend('<li class="back"><a class="small" href="/" title="">' +
+      '<span class="text"><i class="fa fa-lg fa-arrow-left"></i></span>' +
+      '</a></li>');
+  }
+
+  function active_close_btn() {
+    $('.navigation .navbar').prepend('<li class="close"><a class="small" href="#" title="">' +
+      '<span class="text"><i class="fa fa-lg fa-times"></i></span>' +
+      '</a></li>');
+  }
+</script>

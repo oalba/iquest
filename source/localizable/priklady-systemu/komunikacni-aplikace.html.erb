@@ -1,0 +1,56 @@
+---
+title: Komunikační aplikace
+subtitle: Komunikujete se svými pracovníky, zákazníky, dodavateli či partnery. Chcete k tomu využít webové a mobilní technologie? Rádi byste veškerou komunikaci zpřehlednili a také uchovali?
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Komunikační aplikace</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Komunikujete se svými pracovníky, zákazníky, dodavateli či partnery. Chcete k tomu využít webové a mobilní technologie? Rádi byste veškerou komunikaci zpřehlednili a také uchovali?</h3>
+    <p data-aos="fade-up">Rádi pro vás vymyslíme, navrhneme a vytvoříme optimální softwarové řešení.</p>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Kdo potřebuje komunikační aplikaci na míru?" src="/images/app_kinds/communication_applications_1.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Kdy je skvělá aplikace na míru?</b></p>
+        <ul>
+          <li>Vaši lidé jsou často na cestách a potřebují mít informace neustále k dispozici.</li>
+          <li>Nemáte pořádek v interní komunikaci.</li>
+          <li>Rádi byste zlepšili komunikaci se zákazníky.</li>
+          <li>Chcete zpřehlednit tok informací na projektech.</li>
+          <li>Vaším cílem je vytěžit maximum z nejnovějších komunikačních technologií.</li>
+        </ul>
+        <p><a href="/kontakt">Rádi s vámi probereme řešení. Zkušeností máme dost.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

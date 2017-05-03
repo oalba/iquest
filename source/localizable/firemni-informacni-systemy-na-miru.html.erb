@@ -1,0 +1,83 @@
+---
+title: iQuest - Vyvíjíme firemní informační systémy na míru
+subtitle: Vývoj podnikových informačních systémů na míru.
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Vyvíjíme firemní informační systémy na míru</h1>
+    <h2 data-aos="fade-up">Když software má následovat Vás...</h2>
+  </div>
+
+  <%= partial 'kinds_of_products' %>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Proč podnikový informační systém na míru?</h3>
+    <p data-aos="fade-up">
+      Vašemu podnikání <b>nevyhovuje krabicový software</b>. Před implementací probíhá detailní analýza a návrh, dojde k optimalizaci procesů a tím i <b>zlepšení celkového fungování firmy</b>. Úplné přizpůsobení software vašim požadavkům a potřebám.
+      Neustálý rozvoj a přizpůsobování a tím získávání konkurenční výhody. Možnost kreativně upravovat firemní procesy, data, nastavení a další libovolně dle potřeb či nápadů.
+    </p>
+  </div>
+  <div class="we-are-the-champions" data-aos="fade-up">
+    <div class="text-green">Jsme precizní v analýze a návrhu</div>
+    <div class="text-green">Vyvíjíme užitečné systémy</div>
+  </div>
+  <div class="info">
+    <div class="box left">
+      <img alt="Corporate_information_systems_1" src="/images/corporate_information_systems_1.jpg" data-aos="fade-right" />
+      <div class="offset" data-aos="fade-left">
+        <p><b>Jaké systémy jsme vyvinuli?</b></p>
+        <p> Za dobu naší existence jsme vytvořili velké množství informačních systémů. </p>
+        <ul>
+          <li>Specializovaný <b>CRM software</b> pro management práce obchodních reprezentantů pro Green­Swan Pharmaceuticals.</li>
+          <li>Systém pro <b>pořizování dat v terénu</b> pracovníky Space and Profit.</li>
+          <li><b>Dispečink a callcentrum</b> Modrý anděl.</li>
+          <li>Plně integrovaný <b>velkoobchodní prodejní systém</b> distributora náhradních dílů na automobily PARTSPOINT.</li>
+          <li>Systém pro <b>management práce</b> stovek merchandiserů pro Space and Profit.</li>
+          <li>Systém pro <b>management stovek zdravotních sester</b> při domácí zdravotní péči společnosti Procare.</li>
+          <li>A mnoho dalších... (<a href="/reference">reference</a>).</li>
+        </ul>
+      </div>
+    </div>
+    <div style="height: 10px;"></div>
+    <div class="box right">
+      <img alt="Corporate_information_systems_2" src="/images/corporate_information_systems_2.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Jak vzniká podnikový informační systém na míru?</b></p>
+        <ul>
+          <li><b>Projektový záměr</b> - sestavení základního popisu požadavků a cílů.</li>
+          <li>Globální analýza.</li>
+          <li><b>Úvodní studie</b> - konceptuální popis řešení oblasti, hrubý návrh systému.</li>
+          <li><b>Projekt, detailní návrh</b> - detailní popis a návrh všech dimenzí budoucího informačního systému.</li>
+          <li><b>Implementace</b> - programování, integrace, převod dat,...</li>
+          <li>Pilotní provoz</b>.</li>
+          <li>Školení a adaptace uživatelů.</li>
+          <li>Nasazení do ostrého provozu.</li>
+          <li>Provoz, údržba, rozvoj.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

@@ -1,0 +1,54 @@
+---
+title: Objednávkové systémy
+subtitle: Co výrazně pomáhá zvýšit přísun zakázek? Co zákazníkům usnadňuje provedení transakce, ať už jsou kdekoliv? Je to možnost objednat právě vaše služby či zboží přímo přes internet či přes mobilní řešení.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Objednávkové systémy</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Co výrazně pomáhá zvýšit přísun zakázek? Co zákazníkům usnadňuje provedení transakce, ať už jsou kdekoliv? Je to možnost objednat právě vaše služby či zboží přímo přes internet či přes mobilní řešení.</h3>
+    <p data-aos="fade-up">Mobilní objednávky dnes dosahují až okolo 50% objemu nákupů!</p>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Objednávkové systémy" src="/images/app_kinds/order_systems_1.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Pro koho je vhodné řešení objednávek na míru?</b></p>
+        <ul>
+          <li>Nabízíte kvalitní služby a vaši zákazníci se zatím nemohou jednoduše objednat přes internet</li>
+          <li>Prodáváte vstupenky, vouchery, jízdenky, letenky a podobně.</li>
+          <li>Chcete, aby přes internet či mobil šlo poptat a objednat cokoliv, co nabízíte.</li>
+        </ul>
+        <p><a href="/kontakt">Rádi pro vás navrhneme optimální řešení.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

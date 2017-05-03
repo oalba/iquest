@@ -1,0 +1,61 @@
+---
+title: CRM systémy a systémy pro obchodní reprezentanty
+subtitle: Jste nároční a chcete ještě něco víc? Rádi byste kvalitně řídili veškeré obchodní procesy přesně podle svých potřeb? Vřele doporučujeme systém na míru. A na to jsme odborníci my. Mapujeme procesy, navrhujeme architekturu systému, programujeme, komunikujeme, integrujeme.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">CRM systémy a systémy<br />pro obchodní reprezentanty</h1>
+  </div>
+
+  <div class="info">
+    <div class="box left">
+      <img alt="CRM systémy a systémy pro obchodní reprezentanty" src="/images/app_kinds/crm_1.jpg" data-aos="fade-right" />
+      <div class="offset" data-aos="fade-left">
+        <p><b>CRM systémy a systémy pro obchodní reprezentanty.</b></p>
+        <p>Standardní systémy kromě komunikace na zakázkách většinou nabízejí další možnosti ukládání informací o klientech a obchodních případech.<br /><br />Jste nároční a chcete ještě něco víc? Rádi byste kvalitně řídili veškeré obchodní procesy přesně podle svých potřeb? Vřele doporučujeme systém na míru. A na to jsme odborníci my.<br /><br />Mapujeme procesy, navrhujeme architekturu systému, programujeme, komunikujeme, integrujeme.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Kdy se Vám hodí zakázkový CRM systém?" src="/images/app_kinds/crm_2.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Kdy skvěle využijete zakázkový CRM systém?</b></p>
+        <ul>
+          <li>Nenašli jste krabicový produkt, který by vám vyhovoval. Nebo jej ani nechcete.</li>
+          <li>Chcete rozvíjet své specifické obchodní procesy.</li>
+          <li>Rádi byste přenesli dynamiku svého růstu i do vlastního systému.</li>
+          <li>Toužíte dokonale řídit své obchodní reprezentanty.</li>
+          <li>Vidíte potřebu rozsáhlé integrace s jinými systémy</li>
+        </ul>
+        <p><a href="/kontakt">V tu chvíli jsme tu pro vás my.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

@@ -1,0 +1,107 @@
+<footer class="footer">
+	<div class="">
+		<div class="row">
+			<div class="col-33">
+				<div class="row">
+					<div class="col-offset-20 col-80">
+						<div class="contact-mail">
+							<div class="title">Kontaktujte nás, ozveme se Vám zpět:</div>
+							<div class="inner">
+								<form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form" class="contact-form">
+									<input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+									<input type="text" name="_gotcha" style="display:none" />
+									<div class="form-group">
+										<label for="email">E-mail:</label>
+										<input type="text" name="email" id="email">
+									</div>
+									<div class="form-group">
+										<label for="message">Vzkaz:</label>
+										<textarea wrap="soft | hard" name="message" id="message">Dobrý den, &#010;rádi bychom poptali ...&#010;&#010;Tel.:&nbsp;</textarea>
+									</div>
+									<button type="submit" id='submit_<%= current_page.page_id.split('.')[0].gsub('/', '_') %>'><i class="fa fa-share"></i> Odeslat kontakt</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-33">
+				<div class="row">
+					<div class="col-100">
+						<div class="offset center social-icons">
+							<a href="https://www.facebook.com/iquest.cz" target="_blank">
+		                        <span class="fa-stack fa-2x">
+		                          <i class="fa fa-circle fa-stack-2x"></i>
+		                          <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+		                        </span>
+		                    </a>
+		                    <a href="https://www.linkedin.com/company-beta/3021019/" target="_blank">
+		                        <span class="fa-stack fa-2x">
+		                          <i class="fa fa-circle fa-stack-2x"></i>
+		                          <i class="fa fa-linkedin fa-stack-1x" aria-hidden="true"></i>
+		                        </span>
+		                    </a>
+		                    <a href="https://github.com/iquest" target="_blank">
+		                        <span class="fa-stack fa-2x">
+		                          <i class="fa fa-circle fa-stack-2x"></i>
+		                          <i class="fa fa-github fa-stack-2x" aria-hidden="true"></i>
+		                        </span>
+		                    </a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-100">
+						<table align="center" class="contact">
+							<tr>
+								<td class="fas"><a href="tel:+420777314768"><span class="fa fa-phone-square"></span></a></td><td><a href="tel:+420777314768">+420 777 314 768</a></td>
+							</tr>
+							<tr>
+								<td class="fas"><a href="mailto:vyvojari@iquest.cz"><span class="fa fa-envelope"></span></a></td><td><a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a></td>
+							</tr>
+							<tr>
+								<td class="fas"><a href="https://www.google.es/maps/place/Plask%C3%A1+623%2F5,+150+00+Praha+5-Sm%C3%ADchov,+Chequia/@50.0804691,14.4053866,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470b94fb74137e67:0xf0879059d1d15d52!2sPlask%C3%A1+622%2F3,+150+00+Praha+5-Sm%C3%ADchov,+Chequia!3b1!8m2!3d50.080473!4d14.4061696!3m4!1s0x470b94fb76ebaff3:0xae50b344cb48020f!8m2!3d50.0804691!4d14.4059338"><span class="fa fa-map-marker"></span></a></td>
+								<td><a href="https://www.google.es/maps/place/Plask%C3%A1+623%2F5,+150+00+Praha+5-Sm%C3%ADchov,+Chequia/@50.0804691,14.4053866,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470b94fb74137e67:0xf0879059d1d15d52!2sPlask%C3%A1+622%2F3,+150+00+Praha+5-Sm%C3%ADchov,+Chequia!3b1!8m2!3d50.080473!4d14.4061696!3m4!1s0x470b94fb76ebaff3:0xae50b344cb48020f!8m2!3d50.0804691!4d14.4059338">iQuest s.r.o.<br>
+									Plaská 5 <br>
+									150 00 Praha 5</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-33">
+				<div class="row">
+					<div class="col-offset-20 col-80">
+						<div class="services">
+							<div class="title">S čím vším Vám pomůžeme?</div>
+							<div class="inner">
+								<ul>
+									<li>Analýza problémů, či zadání</li>
+									<li>Pomoc při tvorbě zadání</li>
+									<li>Projekt systému</li>
+									<li>Grafický návrh</li>
+									<li>Vývoj a implementace</li>
+									<li>Integrace s jinými systémy</li>
+									<li>Optimalizace uživatelského prostředí</li>
+									<li>Provozování</li>
+									<li>Podpora</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-100">
+					<div class="offset center fv-center">
+						Copyright © 2017 iQuest s.r.o - All Rights Reserved - Privacy
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

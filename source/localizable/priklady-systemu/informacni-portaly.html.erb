@@ -1,0 +1,55 @@
+---
+title: Informační portály
+subtitle: Jsou ideálním řešením vždy, když chcete prezentovat rozsáhlý text či specifické informace. Hodí se pro obsah, který zákazníkům nabídnete zdarma, i pro ten placený.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Informační portály</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Jsou ideálním řešením vždy, když chcete prezentovat rozsáhlý text či specifické informace. Hodí se pro obsah, který zákazníkům nabídnete zdarma, i pro ten placený.</h3>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Informační portály" src="/images/app_kinds/information_portals_1.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Po řešení na míru rozhodně sáhněte v následujících případech.</b></p>
+        <ul>
+          <li>Nevyhovují vám průměrné standardní redakční systémy (CMS).</li>
+          <li>Potřebujete zveřejnit rozsáhlá data a nejlépe s možností komplexního vyhledávání.</li>
+          <li>Poskytujete atraktivní placený obsah.</li>
+          <li>Váš portál vyžaduje složitější navigaci.</li>
+          <li>Oceníte rychlé vyhledávání v obsahu.</li>
+        </ul>
+        <p><a href="/kontakt">Nechte vytvoření informačních portálů na nás.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

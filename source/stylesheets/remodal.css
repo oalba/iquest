@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Remodal's necessary styles
+   ========================================================================== */
+
+/* Hide scroll bar */
+
+html.remodal-is-locked body{
+  overflow: hidden;
+  margin-right: 15px;
+
+  touch-action: none;
+}
+html.remodal-is-locked body .navigation .navbar{
+  right: 55px;
+}
+
+/* Anti FOUC */
+
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+
+/* Necessary styles of the overlay */
+
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+
+  display: none;
+}
+
+/* Necessary styles of the wrapper */
+
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+  overflow: auto;
+
+  text-align: center;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.remodal-wrapper:after {
+  display: inline-block;
+
+  height: 100%;
+  margin-left: -0.05em;
+
+  content: "";
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay,
+.remodal-wrapper {
+  backface-visibility: hidden;
+}
+
+/* Necessary styles of the modal dialog */
+
+.remodal {
+  position: relative;
+  text-align: left;
+
+  outline: none;
+
+  text-size-adjust: 100%;
+}
+.remodal h2{
+  color: #4590af;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Raleway-medium';
+}
+.remodal p a{
+  cursor: pointer;
+  color: #4590af;
+  border-bottom: 1px dotted #4590af;
+}
+.remodal p a:hover{
+  color: inherit;
+}
+.remodal p,
+.remodal ul li{
+  font-size: 16px;
+}
+.remodal p + ul,
+.remodal p + table{
+  margin-top: -12px;
+}
+.remodal table td{
+  padding-right: 12px;
+}
+.remodal strong{
+  font-family: 'Raleway-medium';
+}
+.remodal .contact-bubble{
+  margin-bottom: 26px;
+}
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block;
+}

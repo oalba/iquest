@@ -1,0 +1,56 @@
+---
+title: Správa zakázek
+subtitle: Jednoduše pořádek. V poptávkách, nabídkách, objednávkách, dodacích a předávacích protokolech. A navíc, chcete mít všechny potřebné informace k zakázkám přístupné přes internet a mobilní aplikaci?
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Správa zakázek</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Jednoduše pořádek. V poptávkách, nabídkách, objednávkách, dodacích a předávacích protokolech. A navíc, chcete mít všechny potřebné informace k zakázkám přístupné přes internet a mobilní aplikaci?</h3>
+    <p data-aos="fade-up">Nechte nás zanalyzovat vaše potřeby, procesy a data. Navrhneme optimální řešení.</p>
+  </div>
+
+  <div class="info">
+    <div class="box left">
+      <img alt="Kdy potřebujete řešení na míru?" src="/images/app_kinds/order_management_1.jpg" data-aos="fade-right" />
+      <div class="offset" data-aos="fade-left">
+        <p><b>Kdy potřebujete správu na míru?</b></p>
+        <ul>
+          <li>Chcete sdílet informace přes zabezpečený web a mobil.</li>
+          <li>Potřebujete svá data zpřístupnit lidem v terénu.</li>
+          <li>Máte více poboček a chcete sdílet data o zakázkách.</li>
+          <li>Excel je stále vaším hlavním nástrojem pro evidenci dat a už to nestačí.</li>
+          <li>Rádi byste svěřili uspořádání svých dat profesionálním analytikům.</li>
+        </ul>
+        <p><a href="/kontakt">Rádi vymyslíme řešení právě pro vás.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

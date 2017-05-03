@@ -1,0 +1,62 @@
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-33">
+				<div class="offset">
+					<div class="title">S čím vším Vám pomůžeme?</div>
+					<div class="inner">
+						<ul>
+							<li>Analýza problémů, či zadání</li>
+							<li>Pomoc při tvorbě zadání</li>
+							<li>Projekt systému</li>
+							<li>Grafický návrh</li>
+							<li>Vývoj a implementace</li>
+							<li>Integrace s jinými systémy</li>
+							<li>Optimalizace uživatelského prostředí</li>
+							<li>Provozování</li>
+							<li>Podpora</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-33">
+				<div class="offset">
+					<div class="title">Jsme:</div>
+					<div class="inner">
+						iQuest s.r.o.
+						<br /> Plaská 5
+						<br /> 150 00 Praha 5 - Malá strana
+						<br />
+						<br />
+						<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>
+						<br />
+						<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
+						<br />
+						<br />
+						<a href="/kontakt">mapa <i class="fa fa-lg fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-33">
+				<div class="offset">
+					<div class="title">Kontaktujte nás, ozveme se Vám zpět:</div>
+					<div class="inner">
+						<form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form" class="contact-form">
+							<input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+							<input type="text" name="_gotcha" style="display:none" />
+							<div class="form-group">
+								<label for="email">E-mail:</label>
+								<input type="text" name="email" id="email">
+							</div>
+							<div class="form-group">
+								<label for="message">Vzkaz:</label>
+								<textarea wrap="soft | hard" name="message" id="message">Dobrý den, &#010;rádi bychom poptali ...&#010;&#010;Tel.:&nbsp;</textarea>
+							</div>
+							<button type="submit" id='submit_<%= current_page.page_id.split('.')[0].gsub('/', '_') %>'><i class="fa fa-share"></i> Odeslat kontakt</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

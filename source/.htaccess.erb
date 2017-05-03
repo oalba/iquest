@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8
+
+#Options +FollowSymLinks
+Options -Indexes
+
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://www.iquest.cz [R=301,L]

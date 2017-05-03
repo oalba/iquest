@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta property="og:image" content="/images/og.jpg" />
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="description" content="<%= current_page.data.subtitle || I18n.t('default_meta_descr') %>">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || I18n.t('default_meta_title') %></title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    
+
+    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :animate %>
+    <%= stylesheet_link_tag :hover %>
+    <%= stylesheet_link_tag :remodal %>
+    <%= stylesheet_link_tag :'remodal-default-theme' %>
+    <%= javascript_include_tag :all %>
+    <%= javascript_include_tag :'jquery.validate.min' %>
+    <%= javascript_include_tag :'additional-methods.min', async: true %>
+    <%= javascript_include_tag :'jquery.easing.compatibility', async: true %>
+    <%= javascript_include_tag :remodal, async: true %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MX77Q3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-MX77Q3');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <%= partial 'navigation' %>
+
+    <div id="overlay"></div>
+
+    <%= partial 'menu' %>
+    
+    <%= yield %>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+       offset: 50,
+       duration: 800,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+---
+cz:
+  urls:
+    home                       : '/'
+    contact                    : '/kontakt'
+    iquest_way                 : '/iquest-way'
+    why_iquest                 : '/proc-iquest'
+    reference                  : '/reference'
+    technology                 : '/technologie'
+    not_only_money             : '/not-only-money'
+    join_us                    : '/prace-programator-ruby-on-rails'
+    consultation_free          : '/konzultaci-zdarma'
+    development                : '/webove-aplikace-na-miru'
+    inforation_systems         : '/firemni-informacni-systemy-na-miru'
+    mobile_applications        : '/mobilni-aplikace-nove-generace'
+    mobilni_aplikace           : '/podnikove-mobilni-aplikace'
+    verejne_aplikace           : '/verejne-mobilni-aplikace'
+    blog                       : '/blog'
+    # Kinds of products
+    reservation_systems        : '/priklady-systemu/rezervacni-systemy'
+    vendor_portals             : '/priklady-systemu/prodejni-portaly'
+    crm_systems                : '/priklady-systemu/crm-systemy'
+    web_dispatching            : '/priklady-systemu/webove-dispecinky'
+    information_portals        : '/priklady-systemu/informacni-portaly'
+    people_organization        : '/priklady-systemu/organizace-lidi'
+    communication_applications : '/priklady-systemu/komunikacni-aplikace'
+    ordering_systems           : '/priklady-systemu/objednavkove-systemy'
+    databases                  : '/priklady-systemu/databaze'
+    order_management           : '/priklady-systemu/sprava-zakazek'
+    facebook_applications      : '/priklady-systemu/facebook-aplikace'
+    b2b_portals                : '/priklady-systemu/b2b-b2c-portaly'
+    # Reference
+    greenswan                  : '/reference/greenswan'
+    modry_andel                : '/reference/modry-andel'
+    cemio                      : '/reference/cemio'
+    eurosignal                 : '/reference/eurosignal'
+    cia_news                   : '/reference/cia-news'
+    procare                    : '/reference/procare'
+    ignum                      : '/reference/ignum'
+    partspoint                 : '/reference/partspoin'
+    paartyy                    : '/reference/paartyy'
+    extenso                    : '/reference/extenso'
+    amca                       : '/reference/amca'
+    bahal                      : '/reference/bahal'
+    autoprima                  : '/reference/autoprima'
+    hasek                      : '/reference/hasek'
+
+  # default_meta_title: 'iQuest - Měníme myšlenky v software'
+  default_meta_title: 'iQuest s.r.o'
+  default_meta_descr: 'Tvorba podnikových mobilních aplikací a firemních informačních systémů na míru, vývoj webových aplikací.'
+
+  navigation: # Horni menu.
+    iquest_way : 'iQuest Way'
+    why_iquest : 'Proč iQuest'
+    reference  : 'Reference'
+    contact    : 'Kontakt'
+
+  menu: # Menu co je vpravo.
+    home           : 'Úvod'
+    iquest_way     : 'iQuest Way'
+    why_iquest     : 'Proč iQuest'
+    reference      : 'Reference'
+    technology     : 'Technologie'
+    not_only_money : 'Not only money'
+    join_us        : 'Přidej se k nám'
+    contact        : 'Kontakt'
+    blog           : 'Přečtete si'
+
+  pages:
+    main:  # Uvodni stranka.
+      title                 : 'Měníme myšlenky v software'
+      sub_title             : 'Tvoříme webové systémy a mobilní aplikace.<br/>Již přes 13 let'
+      examples_of_work      : 'Příklady naší práce'
+      more_references       : 'Více referencí'
+      our_main_echnologies  : 'Naše hlavní technologie'
+      more_about_technology : 'Více o technologiích'
+      buttons:
+        consultation        : 'Chci první konzultaci <strong>ZDARMA</strong>'
+        development         : 'Vývoj<br />webových<br />aplikací'
+        inforation_systems  : 'Firemní<br />informační<br />systémy <br class="br" /> na míru'
+        mobile_applications : 'Mobilní <br />aplikace nové<br /> generace'
+
+    contact:
+      contact_us: 'Kontaktujte nás'
+
+
+  kinds_of_products:
+    reservation_systems        : 'rezervační systémy'
+    vendor_portals             : 'prodejní portály'
+    crm_systems                : 'CRM systémy'
+    web_dispatching            : 'webové dispečinky'
+    information_portals        : 'informační portály'
+    people_organization        : 'organizace lidí'
+    communication_applications : 'komunikační aplikace'
+    ordering_systems           : 'objednávkové systémy'
+    databases                  : 'databáze'
+    order_management           : 'správa zakázek'
+    facebook_applications      : 'facebook aplikace'
+    b2b_portals                : 'B2B/B2C portály'
+
+  footer:
+    we_are            : 'Jsme'
+    map               : 'mapa'
+    simply_contact_us : 'Kontaktujte nás jednoduše, ozveme se Vám zpět'
+    message           : 'Vzkaz'
+    message_example   : 'Dobrý den, &#010;rádi bychom poptali ...&#010;&#010;Tel.:&nbsp;'
+    send_contact      : 'Odeslat kontakt'

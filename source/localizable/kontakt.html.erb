@@ -1,0 +1,159 @@
+---
+title: iQuest - Kontakt
+subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
+---
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT79g0yz7iWCU1kZ4iNXaayEI_gcC_ZxA"></script>
+
+<div id="map-canvas"></div>
+<div class="box" data-aos="fade-right">
+  <img class="logo" alt="Logo_hand" src="/images/logo_hand.png" />
+  <h1>Kontaktujte nás</h1>
+  <table>
+    <tr>
+      <td>Adresa:</td>
+      <td>iQuest s.r.o.
+        <br />Plaská 5
+        <br />150 00 Praha 5</td>
+    </tr>
+    <tr>
+      <td>IČ:</td>
+      <td>27096483</td>
+    </tr>
+    <tr>
+      <td>DIČ:</td>
+      <td>CZ 27096483</td>
+    </tr>
+    <tr class="kontakt-telefon">
+      <td>Telefon:</td>
+      <td><a href="tel:+420774314763" class="c-phone"><i class="fa fa-phone"></i> +420 774 314 763</a></td>
+    </tr>
+    <tr>
+      <td>Mobil:</td>
+      <td><a href="tel:+420777314768" class="c-phone"><i class="fa fa-lg fa-mobile-phone"></i> +420 777 314 768</a></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><i class="fa fa-envelope-o"></i> <a href="mailto:iquest@iquest.cz">iquest@iquest.cz</a></td>
+    </tr>
+  </table>
+  <p class="business-register">Společnost byla zapsána dne 15.11.2003 v obchodním rejstříku vedeném u Městského soudu v Praze, oddíl C., vložka 95959.</p>
+  <form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form2" class="contact-form">
+    <input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <table>
+      <tr>
+        <td><label for="email">E-mail:</label></td>
+        <td><input type="text" name="email" id="email"></tr>
+      <tr>
+        <td><label for="message">Vzkaz:</label></td>
+        <td><textarea name="message" id="message">Dobrý den, &#010;rádi bychom poptali ...&#010;Tel.:&nbsp;</textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit" id="submit_kontakt_form" class="pull-right"><i class="fa fa-share"></i> Odešlete kontakt</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<%= partial 'footer' %>
+
+<script>
+  // function initialize() {
+  //   var mapCanvas = document.getElementById('map-canvas');
+
+  //   var mapOptions = {
+  //     center: new google.maps.LatLng(50.080469, 14.405934),
+  //     zoom: 17,
+  //     scrollwheel: false,
+  //     mapTypeId: google.maps.MapTypeId.ROADMAP,
+  //     panControl: false,
+  //     mapTypeControl: false,
+  //     streetViewControl: false,
+  //     zoomControl: true,
+  //     zoomControlOptions: {
+  //       position: google.maps.ControlPosition.RIGHT_CENTER
+  //     }
+  //   }
+
+  //   var map = new google.maps.Map(mapCanvas, mapOptions)
+  //   var marker = new google.maps.Marker({
+  //     position: new google.maps.LatLng(50.080469, 14.405934)
+  //   });
+
+  //   marker.setMap(map);
+  // }
+
+  // google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script>
+  var point = {
+    lat: 50.080469,
+    lng: 14.405934
+  };
+  var markerSize = {
+    x: 22,
+    y: 40
+  };
+
+
+  google.maps.Marker.prototype.setLabel = function(label) {
+    this.label = new MarkerLabel({
+      map: this.map,
+      marker: this,
+      text: label
+    });
+    this.label.bindTo('position', this, 'position');
+  };
+
+  var MarkerLabel = function(options) {
+    this.setValues(options);
+    this.span = document.createElement('span');
+    this.span.className = 'map-marker-label';
+  };
+
+  MarkerLabel.prototype = $.extend(new google.maps.OverlayView(), {
+    onAdd: function() {
+      this.getPanes().overlayImage.appendChild(this.span);
+      var self = this;
+      this.listeners = [
+        google.maps.event.addListener(this, 'position_changed', function() {
+          self.draw();
+        })
+      ];
+    },
+    draw: function() {
+      var text = String(this.get('text'));
+      var position = this.getProjection().fromLatLngToDivPixel(this.get('position'));
+      this.span.innerHTML = text;
+      this.span.style.left = (position.x - (markerSize.x / 2)) - (text.length * 3) + 10 + 'px';
+      this.span.style.top = (position.y - markerSize.y + 40) + 'px';
+    }
+  });
+
+  function initialize() {
+    var myLatLng = new google.maps.LatLng(point.lat, point.lng);
+    var gmap = new google.maps.Map(document.getElementById('map-canvas'), {
+      zoom: 17,
+      center: myLatLng,
+      scrollwheel: false,
+      panControl: false,
+      mapTypeControl: false,
+      streetViewControl: false,
+      zoomControl: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoomControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_CENTER
+      }
+    });
+    var myMarker = new google.maps.Marker({
+      map: gmap,
+      position: myLatLng,
+      label: 'iQuest s.r.o.',
+      draggable: true
+    });
+  }
+
+  initialize();
+</script>

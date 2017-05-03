@@ -1,0 +1,135 @@
+---
+en:
+  paths:
+    kontact                            : 'contact'
+    proc-iquest                        : 'why-iquest'
+    kontakt                            : 'contact'
+    technologie                        : 'technology'
+    prace-programator-ruby-on-rails    : 'join-us'
+    konzultaci-zdarma                  : 'consultation-free-of-charge'
+    webove-aplikace-na-miru            : 'web-application-development'
+    firemni-informacni-systemy-na-miru : 'tailored-information-systems'
+    podnikove-mobilni-aplikace         : 'enterprise-mobile-applications'
+    # Kinds of products
+    priklady-systemu                   : 'systems'
+    rezervacni-systemy                 : 'reservation-systems'
+    prodejni-portaly                   : 'vendor-portals'
+    crm-systemy                        : 'crm-systems'
+    webove-dispecinky                  : 'web-dispatching'
+    informacni-portaly                 : 'information-portals'
+    organizace-lidi                    : 'people-organization'
+    komunikacni-aplikace               : 'communication-applications'
+    objednavkove-systemy               : 'ordering-systems'
+    databaze                           : 'databases'
+    sprava-zakazek                     : 'order-management'
+    facebook-aplikace                  : 'facebook-applications'
+    b2b-b2c-portaly                    : 'b2b-b2c-portals'
+    # Reference
+    modry-andel                        : 'blue-angel'
+
+
+  urls:
+    home                       : '/en'
+    contact                    : '/en/contact'
+    iquest_way                 : '/en/iquest-way'
+    why_iquest                 : '/en/why-iquest'
+    reference                  : '/en/reference'
+    technology                 : '/en/technology'
+    not_only_money             : '/en/not-only-money'
+    join_us                    : '/en/join-us'
+    consultation_free          : '/en/consultation-free-of-charge'
+    development                : '/en/web-application-development'
+    inforation_systems         : '/en/tailored-information-systems'
+    mobile_applications        : '/en/enterprise-mobile-applications'
+    mobilni_aplikace           : '/en/podnikove-mobilni-aplikace'
+    verejn_aplikace           : '/en/verejne-mobilni-aplikace'
+    blog                       : '/en/blog'
+    # Kinds of products
+    reservation_systems        : '/en/systems/reservation-systems'
+    vendor_portals             : '/en/systems/vendor-portals'
+    crm_systems                : '/en/systems/crm-systems'
+    web_dispatching            : '/en/systems/web-dispatching'
+    information_portals        : '/en/systems/information-portals'
+    people_organization        : '/en/systems/people-organization'
+    communication_applications : '/en/systems/communication-applications'
+    ordering_systems           : '/en/systems/ordering-systems'
+    databases                  : '/en/systems/databases'
+    order_management           : '/en/systems/order-management'
+    facebook_applications      : '/en/systems/facebook-applications'
+    b2b_portals                : '/en/systems/b2b-b2c-portals'
+    # Reference
+    greenswan                  : '/en/reference/greenswan'
+    modry_andel                : '/en/reference/blue-angel'
+    cemio                      : '/en/reference/cemio'
+    eurosignal                 : '/en/reference/eurosignal'
+    cia_news                   : '/en/reference/cia-news'
+    procare                    : '/en/reference/procare'
+    ignum                      : '/en/reference/ignum'
+    partspoint                 : '/en/reference/partspoin'
+    paartyy                    : '/en/reference/paartyy'
+    extenso                    : '/en/reference/extenso'
+    amca                       : '/en/reference/amca'
+    bahal                      : '/en/reference/bahal'
+    autoprima                  : '/en/reference/autoprima'
+    hasek                      : '/en/reference/hasek'
+
+  # default_meta_title: 'iQuest - We transform ideas into software'
+  default_meta_title: 'iQuest s.r.o'
+  default_meta_descr: 'We create web systems and mobile applications. For over 13 years.'
+
+  navigation: # Horni menu.
+    iquest_way : 'iQuest Way'
+    why_iquest : 'Why iQuest'
+    reference  : 'Reference'
+    contact    : 'Contact'
+
+  menu: # Menu co je vpravo.
+    home           : 'Homepage'
+    iquest_way     : 'iQuest Way'
+    why_iquest     : 'Why iQuest'
+    reference      : 'Reference'
+    technology     : 'Technology'
+    not_only_money : 'Not only money'
+    join_us        : 'Join us'
+    contact        : 'Contact'
+    blog           : 'Read'
+
+  pages:
+    main: # Uvodni stranka.
+      title                 : 'We transform ideas into software'
+      sub_title             : 'We create web systems and mobile applications.<br/>For over 13 years'
+      examples_of_work      : 'The examples of our work'
+      more_references       : 'More references'
+      our_main_echnologies  : 'Our main technologies'
+      more_about_technology : 'More about technology'
+      buttons:
+        consultation        : 'I want an initial consultation <strong>FREE</strong> of charge'
+        development         : 'Web<br />Application<br />Development'
+        inforation_systems  : 'Tailored<br />corporate<br />inforation <br class="br" /> systems'
+        mobile_applications : 'Mobile<br />applications new<br /> generation'
+
+    contact:
+      contact_us: 'Contact us'
+
+
+  kinds_of_products:
+    reservation_systems        : 'reservation systems'
+    vendor_portals             : 'vendor portals'
+    crm_systems                : 'CRM systems'
+    web_dispatching            : 'web dispatching'
+    information_portals        : 'information portals'
+    people_organization        : 'people organization'
+    communication_applications : 'communication applications'
+    ordering_systems           : 'ordering systems'
+    databases                  : 'databases'
+    order_management           : 'order management'
+    facebook_applications      : 'facebook applications'
+    b2b_portals                : 'B2B/B2C portals'
+
+  footer:
+    we_are            : 'We are'
+    map               : 'map'
+    simply_contact_us : 'Simply contact us, we will contact you back'
+    message           : 'Message'
+    message_example   : 'Hello, &#010;we’d like to send an inquiry regarding ...&#010;Tel.:&nbsp;'
+    send_contact      : 'Send contact'

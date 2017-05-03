@@ -1,0 +1,286 @@
+<div id="opening">
+	<!--<address class="text-center" data-aos="fade-down">
+		<span class="nowrap">
+			<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>,
+		</span>
+		<span class="nowrap">
+			<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
+		</span>
+	</address>-->
+	<div class="circles">
+    <div class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="bg-point4 circle index1 orange" data-aos="zoom-in"></div>
+        		<div class="bg-point5 circle index2 orange" data-aos="zoom-in"></div>
+        		<div class="bg-point6 circle index3 orange" data-aos="zoom-in"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="bg-point1 circle index1 yellow" data-aos="zoom-in"></div>
+        		<div class="bg-point2 circle index2 yellow" data-aos="zoom-in"></div>
+        		<div class="bg-point3 circle index3 yellow" data-aos="zoom-in"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="bg-point7 circle index1 blue" data-aos="zoom-in"></div>
+        		<div class="bg-point8 circle index2 blue" data-aos="zoom-in"></div>
+        		<div class="bg-point9 circle index3 blue" data-aos="zoom-in"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+        <div class="bg-point10 circle index1 green" data-aos="zoom-in"></div>
+        		<div class="bg-point11 circle index2 green" data-aos="zoom-in"></div>
+        		<div class="bg-point12 circle index3 green" data-aos="zoom-in"></div>        
+      </div>
+    </div>
+	</div>
+	<div class="title inner-center">
+		<h1 class="title1 text-center" data-aos="fade-up"><%= t('pages.main.title') %></h1>
+		<h2 class="title2 text-center" data-aos="fade-up"><%= t('pages.main.sub_title') %></h2>
+		<%= link_to t('pages.main.buttons.consultation'), t('urls.consultation_free'), :id => 'konzultace_zdarma', :class => 'konzultace-zdarma', :'data-aos' => 'fade-up' %>
+		<div class="info">
+			<div class="container restyling">
+				<% link_to t('urls.development'), :class => 'box', :'data-aos' => 'fade-up' do %>
+	        		<div class="img-wrap">
+						<img alt="Notebook_and_mouse_cursor_128" src="/images/Notebook_and_mouse_cursor_128.png" />
+					</div>
+					<div class="text"><%= t('pages.main.buttons.development') %></div>
+	      		<% end  %>
+	      		<% link_to t('urls.inforation_systems'), :class => 'box', :'data-aos' => 'fade-up' do %>
+	        		<div class="img-wrap">
+						<img alt="Go_to_web_128" src="/images/Go_to_Web_128.png" />
+					</div>
+					<div class="text"><%= t('pages.main.buttons.inforation_systems') %></div>
+	      		<% end  %>
+	      		<% link_to t('urls.mobile_applications'), :class => 'box', :'data-aos' => 'fade-up' do %>
+	        		<div class="img-wrap">
+						<img alt="Phone_with_hand_128" src="/images/Phone_with_Hand_128.png" />
+					</div>
+					<div class="text"><%= t('pages.main.buttons.mobile_applications') %></div>
+	      		<% end  %>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+
+	<%= partial 'kinds_of_products' %>
+
+	<div class="reference">
+		<h3 class="text-center" data-aos="fade-up"><%= t('pages.main.examples_of_work') %>:</h3>
+		<div class="circles-box" data-aos="fade-up">
+			<% url = '/en' if I18n.locale == :en %>
+			<%= link_to '', "#{url}/reference/greenswan", :class => 'circle greenswan' %>
+			<%= link_to '', "#{url}/reference/cia-news", :class => 'circle cia-news' %>
+			<%= link_to '', "#{url}/reference/cemio", :class => 'circle cemio' %>
+			<%= link_to '', "#{url}/reference/ignum", :class => 'circle ignum' %>
+			<%= link_to '', "#{url}/reference/modry-andel", :class => 'circle modry-andel' %>
+			<%= link_to '', "#{url}/reference", :class => 'circle domenacz' %>
+			<%= link_to '', "#{url}/reference", :class => 'circle magistra' %>
+			<%= link_to '', "#{url}/reference", :class => 'circle avu' %>
+			<%= link_to '', "#{url}/reference/procare", :class => 'circle procare' %>
+		</div>
+		<% link_to t('urls.reference'), :class => 'more-references text-blue', :'data-aos' => 'fade-up' do %>
+      		<%= t('pages.main.more_references') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+    	<% end  %>
+	</div>
+	<%= partial 'our_technology' %>
+</div>
+<footer class="footer">
+	<div class="">
+		<div class="row">
+			<div class="col-33">
+				<div class="row">
+					<div class="col-offset-20 col-80">
+						<div class="contact-mail">
+							<div class="title">Kontaktujte nás, ozveme se Vám zpět:</div>
+							<div class="inner">
+								<form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form" class="contact-form">
+									<input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+									<input type="text" name="_gotcha" style="display:none" />
+									<div class="form-group">
+										<label for="email">E-mail:</label>
+										<input type="text" name="email" id="email">
+									</div>
+									<div class="form-group">
+										<label for="message">Vzkaz:</label>
+										<textarea wrap="soft | hard" name="message" id="message">Dobrý den, &#010;rádi bychom poptali ...&#010;&#010;Tel.:&nbsp;</textarea>
+									</div>
+									<button type="submit" id='submit_<%= current_page.page_id.split('.')[0].gsub('/', '_') %>'><i class="fa fa-share"></i> Odeslat kontakt</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-33">
+				<div class="row">
+					<div class="col-100">
+						<div class="offset center social-icons">
+							<a href="https://www.facebook.com/iquest.cz" target="_blank">
+		                        <span class="fa-stack fa-2x">
+		                          <i class="fa fa-circle fa-stack-2x"></i>
+		                          <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+		                        </span>
+		                    </a>
+		                    <a href="https://www.linkedin.com/company-beta/3021019/" target="_blank">
+		                        <span class="fa-stack fa-2x">
+		                          <i class="fa fa-circle fa-stack-2x"></i>
+		                          <i class="fa fa-linkedin fa-stack-1x" aria-hidden="true"></i>
+		                        </span>
+		                    </a>
+		                    <a href="https://github.com/iquest" target="_blank">
+		                        <span class="fa-stack fa-2x">
+		                          <i class="fa fa-circle fa-stack-2x"></i>
+		                          <i class="fa fa-github fa-stack-2x" aria-hidden="true"></i>
+		                        </span>
+		                    </a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-100">
+						<table align="center" class="contact">
+							<tr>
+								<td class="fas"><a href="tel:+420777314768"><span class="fa fa-phone-square"></span></a></td><td><a href="tel:+420777314768">+420 777 314 768</a></td>
+							</tr>
+							<tr>
+								<td class="fas"><a href="mailto:vyvojari@iquest.cz"><span class="fa fa-envelope"></span></a></td><td><a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a></td>
+							</tr>
+							<tr>
+								<td class="fas"><a href="https://www.google.es/maps/place/Plask%C3%A1+623%2F5,+150+00+Praha+5-Sm%C3%ADchov,+Chequia/@50.0804691,14.4053866,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470b94fb74137e67:0xf0879059d1d15d52!2sPlask%C3%A1+622%2F3,+150+00+Praha+5-Sm%C3%ADchov,+Chequia!3b1!8m2!3d50.080473!4d14.4061696!3m4!1s0x470b94fb76ebaff3:0xae50b344cb48020f!8m2!3d50.0804691!4d14.4059338"><span class="fa fa-map-marker"></span></a></td>
+								<td><a href="https://www.google.es/maps/place/Plask%C3%A1+623%2F5,+150+00+Praha+5-Sm%C3%ADchov,+Chequia/@50.0804691,14.4053866,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470b94fb74137e67:0xf0879059d1d15d52!2sPlask%C3%A1+622%2F3,+150+00+Praha+5-Sm%C3%ADchov,+Chequia!3b1!8m2!3d50.080473!4d14.4061696!3m4!1s0x470b94fb76ebaff3:0xae50b344cb48020f!8m2!3d50.0804691!4d14.4059338">iQuest s.r.o.<br>
+									Plaská 5 <br>
+									150 00 Praha 5</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-33">
+				<div class="row">
+					<div class="col-offset-20 col-80">
+						<div class="services">
+							<div class="title">S čím vším Vám pomůžeme?</div>
+							<div class="inner">
+								<ul>
+									<li>Analýza problémů, či zadání</li>
+									<li>Pomoc při tvorbě zadání</li>
+									<li>Projekt systému</li>
+									<li>Grafický návrh</li>
+									<li>Vývoj a implementace</li>
+									<li>Integrace s jinými systémy</li>
+									<li>Optimalizace uživatelského prostředí</li>
+									<li>Provozování</li>
+									<li>Podpora</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-100">
+					<div class="offset center fv-center">
+						Copyright © 2017 iQuest s.r.o - All Rights Reserved - Privacy
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		// for (var i = 1; i < 13; i++) {
+		// 	animateDiv('.bg-point'+i);
+		// }
+		
+		$('.we-are-the-champions').slick({
+			autoplay: true,
+			autoplaySpeed: 2000,
+			dots: true
+		});
+	});
+	$(window).scroll(function(){
+		$('.circles').scrollTop($(document).scrollTop());
+	});
+
+	$('<img alt="Greenswan" src="/images/Refs/greenswan.png" />');
+	$('<img alt="cia-news" src="/images/Refs/cia-news.png" />');
+	$('<img alt="Cemio" src="/images/Refs/cemio.png" />');
+	$('<img alt="Ignum" src="/images/Refs/ignum.png" />');
+	$('<img alt="modry-andel" src="/images/Refs/modry-andel.png" />');
+	$('<img alt="Autoprima" src="/images/Refs/autoprima.png" />');
+	$('<img alt="Procare" src="/images/Refs/procare.png" />');
+
+	/*$(window).scroll(function() {
+		//movement of the circles
+		$('#opening .circles').css('top', $(this).scrollTop() * -0.75);
+	});*/
+
+	$('.reference .circle').on('mouseenter', function() {
+		$(this).addClass('animated pulse');
+	}).on('mouseleave', function() {
+		$(this).removeClass('animated pulse');
+	})
+
+	$('.info .box').on('mouseenter', function() {
+		$(this).find('img').addClass('animated pulse');
+	}).on('mouseleave', function() {
+		$(this).find('img').removeClass('animated pulse');
+	})
+
+
+
+
+
+
+
+
+function makeNewPosition($container) {
+
+    // Get viewport dimensions (remove the dimension of the div)
+    $container = ($container || $(window))
+    var h = $container.height() - 50;
+    var w = $container.width() - 50;
+
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+
+    return [nh, nw];
+
+}
+
+function animateDiv(element) {
+    var $target = $(element);
+    var newq = makeNewPosition($target.parent());
+    var oldq = $target.offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+
+    $(element).animate({
+        top: newq[0],
+        left: newq[1]
+    }, speed, function() {
+        animateDiv(element);
+    });
+
+};
+
+function calcSpeed(prev, next) {
+
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+
+    var greatest = x > y ? x : y;
+
+    var speedModifier = 0.07;
+
+    var speed = Math.ceil(greatest / speedModifier);
+
+    return speed;
+
+}
+</script>
