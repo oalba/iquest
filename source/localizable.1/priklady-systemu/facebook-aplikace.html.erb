@@ -1,0 +1,51 @@
+---
+title: Facebook aplikace
+subtitle: Taky neustále vidíte lidi se smartphonem v ruce? Do Facebooku prostě pořád někdo kouká.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Facebook aplikace</h1>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Kdy potřebujete řešení na míru?" src="/images/app_kinds/facebook_applications_1.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Taky neustále vidíte lidi se smartphonem v ruce? Do Facebooku prostě pořád někdo kouká.</b></p>
+        <p>Využijte toho pro svůj business! Komunikujte s lidmi přímo na této sociální síti. Jak? Pomocí aplikace integrované přímo do Facebooku. Všechno je pak snadnější. Registrace, sdílení vašeho obsahu nebo vytváření zajímavých akcí. Šiřte se virálně.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Pro koho jsou facebookové aplikace vhodné?</h3>
+    <p data-aos="fade-up">Prakticky pro všechny, kdo chtějí zaujmout lidi na největší sociální síti světa.</p>
+    <p data-aos="fade-up"><a href="/kontakt">Rádi vám navrhneme, jak facebookové aplikace vylepší právě vaše podnikání.</a></p>
+    <br />
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

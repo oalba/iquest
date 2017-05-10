@@ -5,7 +5,10 @@ subtitle: Ideální pomocník pro Vaše mobilní pracovníky v terénu.
 <div class="what-we-do what-we-do-app">
   <header></header>
   <div class="title">
-    <h1 data-aos="fade-up">Vyvíjíme podnikové mobilní aplikace</h1>
+    <div class="back-fixed" data-aos="fade-left">
+      <% link_to t('urls.mobile_applications') do %><i class="fa fa-3x fa-arrow-circle-left"></i><% end %>
+    </div>
+    <h1 data-aos="fade-up">Vyvíjíme mobilní aplikace pro firmy</h1>
     <h2 data-aos="fade-up">Ideální pomocník pro Vaše mobilní pracovníky v terénu</h2>
   </div>
 
@@ -15,12 +18,12 @@ subtitle: Ideální pomocník pro Vaše mobilní pracovníky v terénu.
       <div class="offset" data-aos="fade-left">
         <p><b>Naše podnikové mobilní aplikace splňují důležité náležitosti:</b></p>
         <ul>
-          <li>Jednoduchý vzhled pro použití při každodenní práci.</li>
+          <li>Optimalizované pro snadné využití v každodenní práci.</li>
           <li>Snadné a rychlé ovládání.</li>
           <li>Rychlé a jednoduché provádění změn a úprav v reálném čase.</li>
           <li>Pracují online i offline.</li>
           <li>Obvykle napojení na vnitrofiremní, či jiný systém.</li>
-          <li>Využívají hardwarových prostředků mobilních zařízení.</li>
+          <li>Využívají hardwarových prostředků mobilních zařízení (GPS, mapy, fotoaparát a jiné).</li>
         </ul>
       </div>
     </div>
@@ -45,10 +48,7 @@ subtitle: Ideální pomocník pro Vaše mobilní pracovníky v terénu.
     </div>
   </div>
   
-    <h3 class="text-green mobile-h3" data-aos="fade-up">Buďte mobilní s aplikacemi od iQuest!<br /><br />
-    <% link_to t('urls.contact') do %>
-      Obraťte se na nás.
-    <% end %></h3>
+    <h3 class="text-green mobile-h3" data-aos="fade-up">Dejte Vaším zaměstnancům aplikaci,<br /> se kterou budou radí pracovat</h3>
   
   <%= partial 'our_technology' %>
 </div>

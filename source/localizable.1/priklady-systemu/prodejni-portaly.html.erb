@@ -1,0 +1,57 @@
+---
+title: Prodejní portály
+subtitle: Pro standardní e-shopy, které většinou ničím nevynikají, existuje mnoho již hotových řešení. Na rozdíl od nich se však ti, kteří svůj business myslí vážně, bez zakázkového řešení velmi brzy neobejdou.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Prodejní portály</h1>
+    <h2 data-aos="fade-up">A tam, kde krabicová řešení končí, my začínáme.</h2>
+  </div>
+
+  <div class="what-is">
+    <p data-aos="fade-up">Pro standardní e-shopy, které většinou ničím nevynikají, existuje mnoho již hotových řešení. Na rozdíl od nich se však ti, kteří svůj business myslí vážně, bez zakázkového řešení velmi brzy neobejdou.</p>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Pro koho je vhodné zakázkové řešení e-shopu?" src="/images/app_kinds/sale_portals_e_shop.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Zakázkové řešení e-shopu je pro vás ideální, jestliže:</b></p>
+        <ul>
+          <li>Jste velkoobchod a využíváte rozsáhlé datové integrace.</li>
+          <li>Vaší touhou a cílem je se neustále rozvíjet.</li>
+          <li>Prodáváte nestandardní zboží či služby.</li>
+          <li>Váš prodejní proces je složitější.</li>
+          <li>Nabízíte speciální zboží vyžadující pokročilé vyhledávání či třídění.</li>
+          <li>Existují jiné důvody, proč vám nevyhovuje jednoduché standardizované řešení.</li>
+        </ul>
+        <p><a href="/kontakt">V tu chvíli jsme tu pro vás my.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

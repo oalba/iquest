@@ -1,0 +1,63 @@
+---
+title: Databáze
+subtitle: Pro ty, co udržují spoustu dat a chtějí je mít k dispozici odkudkoliv.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Databáze</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Pro ty, co udržují spoustu dat a chtějí je mít k dispozici odkudkoliv.</h3>
+    <p data-aos="fade-up">Budujeme specializované databáze dostupné na webu či v mobilu. Vše se zabezpečením, rychlým vyhledáváním a filtrováním. Související data propojujeme.</p>
+  </div>
+
+  <div class="info">
+    <div class="box left">
+      <img alt="Co potřebujete na internet převést?" src="/images/app_kinds/databases_1.jpg" data-aos="fade-right" />
+      <div class="offset" data-aos="fade-left">
+        <p><b>Co je dobré na internet převést?</b></p>
+        <ul>
+          <li>Databáze klientů.</li>
+          <li>Databáze pracovníků (HR).</li>
+          <li>Databáze obchodních případů.</li>
+          <li>Databáze zakázek.</li>
+          <li>Databáze smluv či jiných dokumentů.</li>
+          <li>Katalog zboží s rozsáhlou možností vyhledávání.</li>
+          <li>Veškeré další možné databáze, které chcete mít přes internet dostupné z jakéhokoliv místa na světě.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="what-is" data-aos="fade-up">
+    <h3>Navrhneme optimální datové struktury a databázovou infrastrukturu. Vystavíme zabezpečenou webovou a mobilní aplikaci, o vaše data budeme pečovat s radostí.</h3>
+    <p><a href="/kontakt">Poptejte pro sebe ideální řešení.</a></p>
+    <br />
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

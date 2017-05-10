@@ -1,0 +1,42 @@
+<div class="test">
+	<div class="row">
+		<div class="col-50">
+			<div class="box box1">
+				<img height="90" width="91" class="circle circle4" alt="Iquest_circle1" src="/images/iquest_circle1.png" />
+			</div>
+		</div>
+		<div class="col-50">
+			<div class="box box2">
+				<img height="90" width="91" class="circle circle3" alt="Iquest_circle2" src="/images/iquest_circle2.png" />
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-50">
+			<div class="box box3">
+				<img height="90" width="91" class="circle circle1" alt="Iquest_circle3" src="/images/iquest_circle3.png" />
+			</div>
+		</div>
+		<div class="col-50">
+			<div class="box box4">
+				<img height="90" width="91" class="circle circle2" alt="Iquest_circle4" src="/images/iquest_circle4.png" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		setTimeout(function() {
+			$(".circle1").addClass("circle1-end circle-new");
+			$(".circle1").removeClass("circle1 circle");
+			$(".circle2").addClass("circle2-end circle-new");
+			$(".circle2").removeClass("circle2 circle");
+			$(".circle3").addClass("circle3-end circle-new");
+			$(".circle3").removeClass("circle3 circle");
+			$(".circle4").addClass("circle4-end circle-new");
+			$(".circle4").removeClass("circle4 circle");
+			// $(".box").css("height", "50vh");
+		}, 2000);
+	})
+</script>

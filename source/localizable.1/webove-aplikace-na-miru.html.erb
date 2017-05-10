@@ -1,0 +1,84 @@
+---
+title: iQuest - Vyvíjíme webové aplikace na míru pro Vaše podnikání.
+subtitle: Vývoj webových aplikací od jednoduchých po složité podnikové informační systémy.
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Vyvíjíme webové aplikace na míru<br />pro Vaše podnikání</h1>
+    <h2 data-aos="fade-up">Od jednoduchých aplikací<br />po složité podnikové informační systémy</h2>
+  </div>
+
+  <%= partial 'kinds_of_products' %>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Co jsou webové aplikace?</h3>
+    <p data-aos="fade-up">
+      Webová aplikace je software, který uživatel může používat prostřednictvím webového prohlížeče. Současné moderní technologie umožňují využívat internetový prohlížeč obdobně jako desktopovou aplikaci i pro velmi složité informační systémy. Příkladem webové
+      aplikace jsou např. Google Documenty. <b>Pracujete s prohlížečem obdobně jako např. S MS Office na desktopu</b>.
+    </p>
+  </div>
+  <div class="we-are-the-champions" data-aos="fade-up">
+    <div class="text-green">Vymýšlíme</div>
+    <div class="text-green">Navrhujeme</div>
+    <div class="text-green">Vyvíjíme</div>
+    <div class="text-green">Integrujeme</div>
+    <div class="text-green">Provozujeme</div>
+  </div>
+  <div class="info">
+    <div class="box left">
+      <img alt="Web_application_development_1" src="/images/web_application_development_1.jpg" data-aos="fade-right" />
+      <div class="offset" data-aos="fade-left">
+        <p><b>Proč informační systém ve webovém prohlížeči</b></p>
+        <ul>
+          <li>Uživatelům <b>není třeba instalovat</b> žádnou aplikaci do počítače (stačí prohlížeč).</li>
+          <li><b>Aktualizace probíhají okamžitě</b> po vydání a všem uživatelům najednou.</li>
+          <li><b>Snadná údržba</b> – není potřeba řešit konkrétní instalaci u uživatele, žádná není.</li>
+          <li>Uživatel se může k systému přihlásit <b>z jakéhokoliv počítače</b> na internetu, tabletu nebo smartphone.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <br/>
+    <br/>
+    <h3 class="text-green text-center" data-aos="fade-up">Vytvoříme pro Vás dokonalou, moderní a technologicky vyspělou<br />webovou aplikaci, či rozsáhlý webový informační systém.</h3>
+  <div class="info">
+    <div class="box right">
+      <img alt="Web_application_development_2" src="/images/web_application_development_2.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Jaké webové aplikace jsme vytvořili?</b></p>
+        <p><b>Za dobu naší existence jsme vytvořili velké množství webových aplikací. Příklady jsou zde: <a href="/reference">Více v referencích</a>.</b></p>
+        <ul>
+          <li>Specializovaný CRM software pro management práce <b>obchodních reprezentantů</b> pro Green­Swan Pharmaceuticals.</li>
+          <li>Dispečink a callcentrum <b>Modrý anděl</b>.</li>
+          <li>Plně integrovaný <b>velkoobchodní nákupní systém</b> distributora náhradních dílů na automobily PARTSPOINT.</li>
+          <li>Systém pro management práce <b>stovek merchandiserů</b> pro Space and Profit.</li>
+          <li>Systém pro management <b>stovek zdravotních sester</b> při domácí zdravotní péči společnosti Procare.</li>
+          <li>A mnoho dalších (<a href="/reference">reference</a>).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

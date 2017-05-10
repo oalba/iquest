@@ -1,0 +1,99 @@
+---
+title: iQuest - Vlastnosti softwaru
+subtitle: Vlastnosti softwaru, který vzniká v iQuestu.
+---
+<div class="content">
+  <div class="pillar pillar-1 yellow-dark">
+    <img height="90" width="91" alt="Iquest_circle1" src="/images/iquest_circle1.png" data-aos="fade-up" />
+    <h1 data-aos="fade-up"><b>Silní</b> v analýze</h1>
+    <h2 data-aos="fade-up">Příprava tvoří 60% práce a 80% úspěchu.</h2>
+    <p>Systémy tvoříme buď na základě metody Vodopádu, kdy předem jsou známé veškeré požadavky nebo na formou Agilního vývoje, kdy zákazník upravuje zadání v průběhu prací tak, aby dle reálně fungujících částí systému mohl spolu s námi ovlivňovat funkcionalitu následných modulů.</p>
+    <p><a href="/kontakt" id="pillars_kontakt_block_1" class="contact-us green hvr-pulse-grow">Kontaktujte nás <i class="fa fa-phone"></i></a></p>
+  </div>
+  <div class="pillar pillar-2 orange-dark">
+    <img height="90" width="91" alt="Iquest_circle2" src="/images/iquest_circle2.png" data-aos="fade-up" />
+    <h1 data-aos="fade-up"><b>Kreativní</b> při návrhu</h1>
+    <h2 data-aos="fade-up">Systém musí být moderní a sexy.</h2>
+    <p>Propojujeme znalosti z předchozího vývoje, sledujeme moderní trendy, využíváme nejlepší technologie.</p>
+    <p>Díky tomu vznikají systémy, které jsou nejen z hlediska technologického na nejvyšší úrovni, ale splňují standardy z hlediska uživatelského ovládání (user experience).</p>
+    <p>Každý systém, který prošel cestou iQuest way, navrhoval zkušený grafik, specialista na daný obor. Uživatelské prostředí je kompaktní, jednoduché a konzistentní, aby pro uživatele byla práce se systémem velmi příjemná a komfortní.</p>
+    <p><a href="/kontakt" id="pillars_kontakt_block_2" class="contact-us green hvr-pulse-grow">Kontaktujte nás <i class="fa fa-phone"></i></a></p>
+  </div>
+  <div class="pillar pillar-3 green-dark">
+    <img height="90" width="91" alt="Iquest_circle3" src="/images/iquest_circle3.png" data-aos="fade-up" />
+    <h1 data-aos="fade-up"><b>Precizní</b> během vývoje</h1>
+    <h2 data-aos="fade-up">iQuest way zaručuje čistý a plně funkční zdrojový kód.</h2>
+    <p>Uznáváme běžné standardy při vývoji systémů a v rámci iQuest way je rozšiřujeme o vlastní metodiku vnitřní komunikace a kontroly jednotlivých členů týmu tak, abychom psali čistý kód vycházející z potřeby dlouhodobé údržby a rozvoje systémů. Dbáme
+      na rychlost a bezpečnost každé součásti zdrojového kódu.</p>
+    <p><b>Vývoj v rámci iQuest way zahrnuje:</b></p>
+    <ul>
+      <li>Návrh architektury i menších implementací těmi nejzkušenějšími systémovými architekty.</li>
+      <li>Volba technologií i integrovaných služeb tak, abychom i sami sebe posouvali technologicky vždy o krok dál.</li>
+      <li>Citlivé sestavení týmu tak, aby na každé části pracoval nejvhodnější vývojář, který má s konkrétními úkoly co nejširší zkušenosti.</li>
+      <li>Zpětná kontrola zdrojového kódu a případný refactoring již před předáním klientovi.</li>
+      <li>Důkladné testování automatizovanými nástroji i precizními testery.</li>
+    </ul>
+    <p><a href="/kontakt" id="pillars_kontakt_block_3" class="contact-us orange hvr-pulse-grow">Kontaktujte nás <i class="fa fa-phone"></i></a></p>
+  </div>
+  <div class="pillar pillar-4 blue-dark">
+    <img height="90" width="91" alt="Iquest_circle4" src="/images/iquest_circle4.png" data-aos="fade-up" />
+    <h1 data-aos="fade-up"><b>Spolehliví</b> při podpoře</h1>
+    <h2 data-aos="fade-up">Odborníci k dispozici po celý životní cyklus systému...</h2>
+    <p>iQuest way je i systém dlouhodobé podpory klientů při nasazování, provozu i rozvoji našich systémů.</p>
+    <p>Již před nasazením nového informačního systému komunikujeme s budoucími uživateli, pracujeme na jejich předchozí adaptaci a školení, aby mnohdy i velmi zásadní změna jejich práce pro ně byla příjemnou a byli sami nadšení z nových možností, které
+      jim systém přináší.</p>
+    <p>V průběhu provozu systému se má vždy zákazník na koho obrátit a konzultovat jak běžné operativní věci, tak složitější otázky úprav a rozvoje systému.</p>
+    <p><a href="/kontakt" id="pillars_kontakt_block_4" class="contact-us orange hvr-pulse-grow">Kontaktujte nás <i class="fa fa-phone"></i></a></p>
+  </div>
+  <a href="/index" class="to-home"></a>
+</div>
+
+<script>
+  //pillar open toggle
+  $('.pillar').click(function() {
+    if (!$('.pillar').hasClass('active')) {
+      $('.navigation .navbar .back').remove();
+      $(this).addClass('active animate');
+      active_close_btn();
+    } else {
+      if (!$('.pillar').hasClass('animate')) {
+        $(this).removeClass('active');
+        $('.navigation .navbar .close').remove();
+        active_back_btn();
+      }
+    }
+  }).on('transitionend', function() {
+    $(this).removeClass('animate')
+  });
+
+  $(document).on('click', '.navigation .navbar .close', function() {
+    $('.pillar.active').removeClass('active');
+    $(this).remove();
+    active_back_btn();
+  });
+
+  //open pillar from url
+  var pillar_active = getUrlParameter('pillar');
+
+  if (pillar_active !== 'undefined' && (pillar_active == 1 ||
+      pillar_active == 2 ||
+      pillar_active == 3 ||
+      pillar_active == 4)) {
+    active_close_btn();
+    $('.pillar').eq(pillar_active - 1).addClass('active animate');
+  } else {
+    active_back_btn();
+  }
+
+  function active_back_btn() {
+    $('.navigation .navbar').prepend('<li class="back"><a class="small" href="/" title="">' +
+      '<span class="text"><i class="fa fa-lg fa-arrow-left"></i></span>' +
+      '</a></li>');
+  }
+
+  function active_close_btn() {
+    $('.navigation .navbar').prepend('<li class="close"><a class="small" href="#" title="">' +
+      '<span class="text"><i class="fa fa-lg fa-times"></i></span>' +
+      '</a></li>');
+  }
+</script>

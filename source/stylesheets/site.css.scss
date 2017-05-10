@@ -435,7 +435,7 @@ html, body {
   font-size: 16px;
   list-style: none;
   position: absolute;
-  top: 20px;
+  top: 50px;
   right: 40px;
   padding: 0;
   margin: 0;
@@ -964,7 +964,7 @@ html, body {
   width: 100%;
   position: absolute;
   padding-top: 15px;
-  // z-index: 2
+  z-index: 2;
 }
 
 #opening address .fa {
@@ -3534,22 +3534,34 @@ footer.footer .container .offset .inner form button[type="submit"] {
     color: black;
   }
   .img-wrap {
+    // display: inline-block;
+    // border: 2px solid #4590af;
+    // background-color: #4590af;
+    height: 110px;
+    // -webkit-border-radius: 50%;
+    // -moz-border-radius: 50%;
+    // border-radius: 50%;
+    padding: 20px;
+    width: 110px;
+    // box-sizing: border-box;
     // text-align: center;
     display: inline-block;
     border: 2px solid #4590af;
     background-color: #4590af;
-    height: 160px;
+    // height: 160px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    padding: 25px;
-    width: 160px;
+    // padding: 25px;
+    // width: 160px;
     box-sizing: border-box;
 
     img{
       position: relative !important;
-      max-width: 110px !important;
-      max-height: 110px !important;
+      // max-width: 110px !important;
+      // max-height: 110px !important;
+      max-width: 70px !important;
+      max-height: 70px !important;
     }
   }
 }

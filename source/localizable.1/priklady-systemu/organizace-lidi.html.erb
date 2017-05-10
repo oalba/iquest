@@ -1,0 +1,57 @@
+---
+title: Organizace lidí
+subtitle: Organizovat personál prostřednictvím internetových technologií je dnes trend. Přestal být konkurenční výhodou a stal se nutností.
+
+---
+<div class="what-we-do">
+  <header></header>
+  <div class="title">
+    <div class="back-fixed" data-aos="fade-left">
+      <a href="/"><i class="fa fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1 data-aos="fade-up">Organizace lidí</h1>
+  </div>
+
+  <div class="what-is">
+    <h3 data-aos="fade-up">Organizovat personál prostřednictvím internetových technologií je dnes trend. Přestal být konkurenční výhodou a stal se nutností.</h3>
+    <p data-aos="fade-up">Vytvoříme pro vás systém na míru, pomocí něhož bude hračka zodpovědně přidělovat práci. A to ať už se jedná o interní nebo externí pracovníky.</p>
+  </div>
+
+  <div class="info">
+    <div class="box right">
+      <img alt="Organizace lidí" src="/images/app_kinds/people_organization_1.jpg" data-aos="fade-left" />
+      <div class="offset" data-aos="fade-right">
+        <p><b>Kdy systém na míru skvěle využijete?</b></p>
+        <ul>
+          <li>Máte pracovníky v terénu a potřebujete je organizovat.</li>
+          <li>Pro přidělování úkolů vám nestačí běžné aplikace.</li>
+          <li>Cítíte potřebu automatizace rozdělování práce.</li>
+          <li>Vyžadujete přesné zadávání a přebírání práce.</li>
+          <li>Chcete komunikovat prostřednictvím smartphonů.</li>
+          <li>Vaším cílem je propracovaný reporting o činnosti vašich týmů.</li>
+        </ul>
+        <p><a href="/kontakt">Teď jsme tu pro vás my.</a></p>
+      </div>
+    </div>
+  </div>
+  <%= partial 'kinds_of_products' %>
+  <%= partial 'our_technology' %>
+</div>
+
+<%= partial 'footer' %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.we-are-the-champions').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true
+    });
+  });
+
+  $('.back-fixed').on('mouseenter', function() {
+    $(this).addClass('animated pulse');
+  }).on('mouseleave', function() {
+    $(this).removeClass('animated pulse');
+  })
+</script>

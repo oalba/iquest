@@ -1,0 +1,159 @@
+---
+title: iQuest - Konzultujte zdarma
+subtitle: Konzultujte Váš projekt se zkušenými odborníky.
+---
+<div id="opening">
+	<div class="title-container">
+		<div class="title inner-center">
+			<h1 class="title1 text-center" data-aos="fade-right">Konzultujte Váš projekt se zkušenými odborníky.</h1>
+			<h2 class="title2 text-center" data-aos="fade-right">Již první schůzka je pro naše zákazníky přínosem</h2>
+		</div>
+		<div class="step-box" data-aos="fade-left">
+			<ul class="step-list">
+				<li>Zkonzultujeme obchodní záměr.</li>
+				<li>Přidáme rady a nápady.</li>
+				<li>Navrhneme ideální postup.</li>
+				<li>Nastíníme cenovou a časovou náročnost.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="steps">
+		<div class="container">
+			<div class="row">
+				<div class="col col1">
+					<span class="step-1" data-aos="zoom-in"><p><strong>1</strong>analýza záměru</p></span>
+				</div>
+				<div class="col col2">
+					<span class="step-2" data-aos="zoom-in"><p><strong>2</strong>detalní analýza a projekt</p></span>
+				</div>
+				<div class="col col3">
+					<span class="step-3" data-aos="zoom-in"><p><strong>3</strong>implementace</p></span>
+				</div>
+				<div class="col col4">
+					<span class="step-4" data-aos="zoom-in"><p><strong>4</strong>provoz, údržba, rozvoj</p></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="kinds-of-contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col col1">
+					<div class="cont" data-aos="fade-up">
+						<form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form_kozultace_zdarma" class="contact-form">
+							<input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+							<input type="text" name="_gotcha" style="display:none" />
+							<h4>Napište nám</h4>
+							<span class="sub-title">vyvojari@iquest.cz</span>
+							<div class="form-group">
+								<input type="text" name="email" placeholder="email" />
+							</div>
+							<div class="form-group">
+								<textarea name="vzkaz">Dobrý den, &#010;rádi bychom poptali ...&#010;&#010;Tel.:&nbsp;</textarea>
+							</div>
+							<button type="submit" id='submit_<%= current_page.page_id.split('.')[0] %>'>ODESLAT</button>
+						</form>
+					</div>
+				</div>
+				<div class="col col2">
+					<div class="cont" data-aos="fade-up">
+						<h4>Navštivte nás</h4>
+						<span class="sub-title">Plaská 5, Praha 5 - Malá Strana</span>
+						<a href="/kontakt" class="submit">ZOBRAZIT MAPU</a>
+					</div>
+				</div>
+				<div class="col col3">
+					<div class="cont" data-aos="fade-up">
+						<form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form_tel_kozultace_zdarma" class="contact-form">
+							<input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+							<input type="text" name="_gotcha" style="display:none" />
+							<input type="text" name="tema" value="Zavolejte mě prosím." style="display:none" />
+							<div class="shadow">
+								<h4>Zavolejte nám</h4>
+								<span class="sub-title"><a href="tel:420777314768">+ 420 777 314 768</a></span>
+								<a href="/kontakt" class="call-us fa fa-phone"></a>
+								<a href="tel:420777314768" class="call-us fa fa-phone mobile"></a>
+							</div>
+							<div class="sub-cont">
+								<span>Zanechte kontakt, zavoláme Vám</span>
+								<div class="form-group">
+									<input type="text" name="phone" value="+420 " />
+								</div>
+								<button type="submit" id='submit_tel_<%= current_page.page_id.split('.')[0] %>'>ODESLAT</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$( window ).resize(size_change);
+$( window ).load(size_change);
+function size_change() {
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $('.step-1, .step-3').attr("data-aos","fade-left");
+    $('.step-2, .step-4').attr("data-aos","fade-right");
+  } else {
+    $('.step-1, .step-2, .step-3, .step-4').attr("data-aos","zoom-in");
+  }
+}
+</script>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-50">
+				<div class="offset">
+					<div class="title">Jsme:</div>
+					<div class="inner">
+						iQuest s.r.o.
+						<br /> Plaská 5
+						<br /> 150 00 Praha 5 - Malá strana
+						<br />
+						<br />
+						<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>
+						<br />
+						<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
+						<br />
+						<br />
+						<a href="/kontakt">mapa <i class="fa fa-lg fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="offset">
+					<div class="title">Kontaktujte nás jednoduše, ozveme se Vám zpět:</div>
+					<div class="inner">
+						<form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form" class="contact-form">
+							<input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+							<input type="text" name="_gotcha" style="display:none" />
+							<!-- <div class="form-group">
+								<label for="name">Vaše jméno:</label>
+								<input type="text" name="name" id="name">
+							</div>
+							<div class="form-group">
+								<label for="company">Firma:</label>
+								<input type="text" name="company" id="company">
+							</div>
+							<div class="form-group">
+								<label for="phone">Telefon:</label>
+								<input type="text" name="phone" id="phone">
+							</div> -->
+							<div class="form-group">
+								<label for="email">E-mail:</label>
+								<input type="text" name="email" id="email">
+							</div>
+							<div class="form-group">
+								<label for="message">Vzkaz:</label>
+								<textarea wrap="soft | hard" name="message" id="message">Dobrý den, &#010;rádi bychom poptali ...&#010;&#010;Tel.:&nbsp;</textarea>
+							</div>
+							<button type="submit" id="submit_<%= current_page.page_id.split('.')[0] %>"><i class="fa fa-share"></i> Odeslat kontakt</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
