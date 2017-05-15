@@ -16,6 +16,9 @@ cz:
     mobilni_aplikace           : '/podnikove-mobilni-aplikace'
     verejne_aplikace           : '/verejne-mobilni-aplikace'
     blog                       : '/blog'
+    volne_pozice               : '/volne-pozice'
+    frontend_developer         : '/frontend-developer'
+    backend_developer          : '/backend-developer'
     # Kinds of products
     reservation_systems        : '/priklady-systemu/rezervacni-systemy'
     vendor_portals             : '/priklady-systemu/prodejni-portaly'
@@ -65,6 +68,7 @@ cz:
     join_us        : 'Přidej se k nám'
     contact        : 'Kontakt'
     blog           : 'Přečtete si'
+    volne_pozice   : 'Přidej se k nám'
 
   pages:
     main:  # Uvodni stranka.

@@ -17,6 +17,11 @@
   src: url(../fonts/Raleway-Thin.ttf)
 }
 
+@font-face {
+  font-family: Supria-Sans;
+  src: url(../fonts/SupriaSans-Light.otf)
+}
+
 .test {
   // background-color: #4590af;
   // padding-top: 12%;
@@ -298,6 +303,10 @@ html, body {
   clear: both
 }
 
+.col-offset-5 {
+  margin-left: 5%;
+}
+
 .col-offset-10 {
   margin-left: 10%;
 }
@@ -343,9 +352,19 @@ html, body {
   width: 33.33%
 }
 
+.row .col-35 {
+  float: left;
+  width: 35%
+}
+
 .row .col-40 {
   float: left;
   width: 40%
+}
+
+.row .col-45 {
+  float: left;
+  width: 45%
 }
 
 .row .col-50 {
@@ -2785,6 +2804,255 @@ body.posa .page-scroll-show .header{
 
 .what-we-do .icons {
   overflow: hidden;
+}
+
+.volne-offset {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 90px !important;
+}
+
+.volne-img {
+  max-width: 100%;
+  // margin-left: -50px;
+}
+
+.h1-volne {
+  font-family: Supria-Sans;
+  font-size: 4em;
+  text-align: right;
+}
+
+.volne-dev-h1 {
+  font-family: Supria-Sans;
+  font-size: 2.5em;
+  color: #008780;
+  margin-top: 40px;
+}
+
+.volne-text-p {
+  font-family: Supria-Sans;
+  font-size: 1.5em !important;
+  font-weight: 600;
+}
+
+.volne-text {
+  padding-top: 20px;
+}
+
+.volne-pozice {
+  .circles {
+    position: absolute;
+    // margin: 200px 10%;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-transition: top 0.1s;
+    -o-transition: top 0.1s;
+    transition: top 0.1s;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  .circles .circle {
+    border-radius: 50%;
+    width: 1.4vw;
+    height: 1.4vw;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 27px;
+    max-height: 27px;
+    position: absolute;
+  }
+  .yellow.index1 {
+    top: 87%;
+    left: 13%
+  }
+
+  .yellow.index2 {
+    top: 62%;
+    left: 42%
+  }
+
+  .yellow.index3 {
+    top: 63%;
+    left: 85%
+  }
+
+  .orange.index1 {
+    top: 60%;
+    left: 97%
+  }
+
+  .orange.index2 {
+    top: 45%;
+    left: 47%
+  }
+
+  .blue.index1 {
+    top: 34%;
+    left: 5%
+  }
+
+  .blue.index2 {
+    top: 38%;
+    left: 87%
+  }
+
+  .blue.index3 {
+    top: 84%;
+    left: 93%
+  }
+
+  .green.index1 {
+    top: 84%;
+    left: 37%
+  }
+}
+
+.developers {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 90px !important;
+}
+
+.img-developers {
+  width: 100%;
+  height: auto;
+}
+
+.developers-h1 {
+  text-align: center;
+  font-size: 5em !important;
+  font-family: Supria-Sans;
+  color: #008780;
+}
+
+.developers-p {
+  font-family: Supria-Sans;
+  text-align: center;
+  font-size: 2.5em !important;
+  font-weight: 500;
+}
+
+.developers-p2 {
+  font-family: Supria-Sans;
+  text-align: center;
+  font-size: 2em !important;
+  font-weight: 500;
+  margin: 60px 0px;
+}
+
+.developers-h2 {
+  font-family: Supria-Sans;
+  color: #008780;
+  font-size: 4em !important;
+  font-weight: 500;
+}
+
+.developers-list {
+  font-family: Supria-Sans;
+  font-size: 1.5em !important;
+}
+
+.developers-hr {
+  text-align: center;
+  width: 80%;
+}
+
+.backend-developer, .frontend-developer {
+  .circles {
+    position: absolute;
+    // margin: 200px 10%;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-transition: top 0.1s;
+    -o-transition: top 0.1s;
+    transition: top 0.1s;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  .circles .circle {
+    border-radius: 50%;
+    width: 1.4vw;
+    height: 1.4vw;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 27px;
+    max-height: 27px;
+    position: absolute;
+  }
+  .yellow.index1 {
+    top: 58%;
+    left: 10%
+  }
+
+  .yellow.index2 {
+    top: 28%;
+    left: 29%
+  }
+
+  .yellow.index3 {
+    top: 65%;
+    left: 54%
+  }
+
+  .orange.index1 {
+    top: 44%;
+    left: 1%
+  }
+
+  .orange.index2 {
+    top: 36%;
+    left: 45%
+  }
+
+  .orange.index3 {
+    top: 60%;
+    left: 69%
+  }
+
+  .blue.index1 {
+    top: 33%;
+    left: 19%
+  }
+
+  .blue.index2 {
+    top: 58%;
+    left: 39%
+  }
+
+  .blue.index3 {
+    top: 34%;
+    left: 84%
+  }
+
+  .green.index1 {
+    top: 64%;
+    left: 25%
+  }
+
+  .green.index2 {
+    top: 38%;
+    left: 63%
+  }
+
+  .green.index3 {
+    top: 46%;
+    left: 91%
+  }
 }
 
 .mobile-h3 {

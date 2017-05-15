@@ -1,0 +1,109 @@
+<div class="page-offset developers">
+    <div class="circles">
+        <div class="bg-point4 circle index1 orange" data-aos="zoom-in"></div>
+        <div class="bg-point5 circle index2 orange" data-aos="zoom-in"></div>
+        <div class="bg-point6 circle index3 orange" data-aos="zoom-in"></div>
+        <div class="bg-point1 circle index1 yellow" data-aos="zoom-in"></div>
+        <div class="bg-point2 circle index2 yellow" data-aos="zoom-in"></div>
+        <div class="bg-point3 circle index3 yellow" data-aos="zoom-in"></div>
+        <div class="bg-point7 circle index1 blue" data-aos="zoom-in"></div>
+        <div class="bg-point8 circle index2 blue" data-aos="zoom-in"></div>
+        <div class="bg-point9 circle index3 blue" data-aos="zoom-in"></div>
+        <div class="bg-point10 circle index1 green" data-aos="zoom-in"></div>
+        <div class="bg-point11 circle index2 green" data-aos="zoom-in"></div>
+        <div class="bg-point12 circle index3 green" data-aos="zoom-in"></div>        
+	</div>
+    <div class="row">
+        <div class="col-offset-10 col-80">
+            <h1 class="developers-h1" data-aos="fade-up">Frontend developer</h1>
+            <p class="developers-p" data-aos="fade-up">
+                Do našeho týmu přijmeme programátora, který umí nebo se chce naučit tvořit webové a mobilní aplikace. Pozice je vhodná pro senior developera i pro šikovného programátora, který se třeba nyní věnuje tvorbě běžných webů a chce se posunout dále.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-100">
+            <img src="/images/og2.jpg" class="img-developers">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-offset-10 col-80">
+            <p class="developers-p2" data-aos="fade-up">
+                V našem mladém kolektivu spolu pracujeme dlouhodobě ve stejném složení, snažíme se jeden druhému pomáhat a hlavně vždy společně směřovat k nejlepšímu výsledku.
+            </p>
+            <p class="developers-p2" data-aos="fade-up">
+                U nás se potkáš se zajímavými technologiemi jako Cordova, Ember JS a jiné, budeš pracovat pro více platforem, sledovat funkcnost jednotlivých aplikací, zasáhneš do optimalizace a rešení neobvyklých problému.
+            </p>
+        </div>
+    </div>
+    <hr class="developers-hr">
+    <div class="row">
+        <div class="col-offset-10 col-40" data-aos="fade-right">
+            <h2 class="developers-h2">Jak to chodí v iQuestu:</h2>
+            <ul class="developers-list">
+                <li>dáváme si záležet na precizním zadání</li>
+                <li>programátor má stále k dispozici pečlivého testera</li>
+                <li>trávíme měsíčně stovky hodin výzkumem</li>
+                <li>každý projekt začínáme s novějšími technologiemi</li>
+                <li>máme časový prostor na kvalitní zpracování zakázky</li>
+                <li>nemáme směrnice a rigidní pravidla</li>
+                <li>zúčastňujeme se mezinárodních konferencí</li>
+                <li>junior vývojář má k dispozici zkušeného kolegu, který mu pomáhá v růstu</li>
+            </ul>
+        </div>
+        <div class="col-offset-5 col-35" data-aos="fade-left">
+            <h2 class="developers-h2">Od kandidáta požadujeme:</h2>
+            <ul class="developers-list">
+                <li>zájem o vývoj software a ochotu učit se</li>
+                <li>schopnost pracovat v týmu</li>
+                <li>spolehlivost a smysl pro zodpovědnost</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-50">
+				<div class="offset">
+					<div class="title"><%= t('footer.we_are') %>:</div>
+					<div class="inner">
+						iQuest s.r.o.
+						<br /> Plaská 5
+						<br /> 150 00 Praha 5 - Malá strana
+						<br />
+						<br />
+						<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>
+						<br />
+						<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
+						<br />
+						<br />
+						<% link_to t('urls.contact') do %>
+							<%= t('footer.map') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+						<% end  %>
+					</div>
+				</div>
+			</div>
+			<div class="col-50">
+				<div class="offset">
+					<div class="title"><%= t('footer.simply_contact_us') %>:</div>
+					<div class="inner">
+						<form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form" class="contact-form">
+							<input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+							<input type="text" name="_gotcha" style="display:none" />
+							<div class="form-group">
+								<label for="email">E-mail:</label>
+								<input type="text" name="email" id="email">
+							</div>
+							<div class="form-group">
+								<label for="message"><%= t('footer.message') %>:</label>
+								<textarea wrap="soft | hard" name="message" id="message"><%= t('footer.message_example') %></textarea>
+							</div>
+							<button type="submit" id="submit_<%= current_page.page_id.split('.')[0] %>"><i class="fa fa-share"></i> <%= t('footer.send_contact') %></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,28 @@
+%!Adobe-FontList 1.18
+%Locale:0x405
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SupriaSans-Light
+FamilyName:Supria Sans
+StyleName:Light
+FullName:Supria Sans Light
+MenuName:Supria Sans Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\= Grafika-New\iQuest\Naborova kampan\Složka iQuest_volne-pozice_001\Document fonts\SupriaSans-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+FileLength:88008
+FileModTime:1292327758
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Supria Sans Light
+NameArray:0,Win,1,Supria Sans Light
+NameArray:0,Win,16,Supria Sans
+%EndFont
+
