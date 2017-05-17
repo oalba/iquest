@@ -32,6 +32,18 @@
         Apache Cordova
       </div>
     <% end %>
+    <% link_to "#{url}/rabbitmq", :class => 'card half', :'data-aos' => 'fade-up' do %>
+      <div class="content rabbitmq"></div>
+      <div class="title">
+        RabbitMQ
+      </div>
+    <% end %>
+    <% link_to "#{url}/firebase", :class => 'card half', :'data-aos' => 'fade-up' do %>
+      <div class="content firebase"></div>
+      <div class="title">
+        Firebase
+      </div>
+    <% end %>
   </div>
   <% link_to t('urls.technology'), :class => 'more-technology text-blue', :'data-aos' => 'fade-up' do %>
     <%= t('pages.main.more_about_technology') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
