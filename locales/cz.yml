@@ -15,7 +15,7 @@ cz:
     mobile_applications        : '/mobilni-aplikace-nove-generace'
     mobilni_aplikace           : '/podnikove-mobilni-aplikace'
     verejne_aplikace           : '/verejne-mobilni-aplikace'
-    blog                       : '/blog'
+    blog                       : 'http://blog.iquest.cz'
     volne_pozice               : '/volne-pozice'
     frontend_developer         : '/frontend-developer'
     backend_developer          : '/backend-developer'

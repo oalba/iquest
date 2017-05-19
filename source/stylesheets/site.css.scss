@@ -236,7 +236,7 @@ h1, h2, h3 {
 }
 
 h1 b, h2 b, h3 b {
-  font-weight: bold
+  font-weight: lighter
 }
 
 h1 {
@@ -262,9 +262,10 @@ p, ul {
 
 body {
   color: #1e1e1e;
-  font-family: SupriaSans-Regular !important;
+  font-family: SupriaSans-Light !important;
   position: relative;
-  margin: 0
+  margin: 0;
+  font-weight: 100;
 }
 
 html, body {
@@ -979,7 +980,7 @@ html, body {
 }
 
 #opening>.title, #more_than_10_years>.title {
-  font-family: SupriaSans-Regular;
+  font-family: SupriaSans-Light;
   width: 100%
 }
 
@@ -1017,8 +1018,8 @@ html, body {
 }
 
 #opening>.title .title1, #opening>.title .title2 {
-  font-family: SupriaSans-Regular;
-  font-weight: bold;
+  font-family: SupriaSans-Light;
+  font-weight: lighter;
   line-height: 115%
 }
 
@@ -1042,7 +1043,7 @@ html, body {
 #opening>.title .info .container .box {
   color: #4590af;
   font-size: 19px;
-  font-weight: bold;
+  font-weight: lighter;
   float: left;
   line-height: 130%;
   position: relative;
@@ -1334,7 +1335,7 @@ html, body {
 #more_than_10_years .title .title1 {
   color: white;
   font-size: 4vw;
-  font-weight: bold;
+  font-weight: lighter;
   margin-top: 0;
   margin-bottom: 0
 }
@@ -1392,8 +1393,8 @@ html, body {
 }
 
 .page .logo-content .info h2 {
-  font-family: SupriaSans-Regular;
-  font-weight: bold;
+  font-family: SupriaSans-Light;
+  font-weight: lighter;
   opacity: 0.8;
   margin: 10px 0
 }
@@ -2722,7 +2723,7 @@ body.posa .page-scroll-show .header{
 }
 
 .what-we-do>.title h2 {
-  font-family: SupriaSans-Regular;
+  font-family: SupriaSans-Light;
   font-size: 35px;
   line-height: 140%
 }
@@ -3602,7 +3603,7 @@ footer.footer .container .offset .inner form button[type="submit"] {
 
 [class*="not-only-money"]>.page-offset>.title h2,
 .success>.page-offset>.title h2 {
-  font-family: SupriaSans-Regular;
+  font-family: SupriaSans-Light;
   font-size: 35px;
   line-height: 140%;
   margin-top: 35px
@@ -4673,7 +4674,7 @@ body.en .konzultace-zdarma{width: 320px;}
 .map-marker-label {
   position: absolute;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 @import "media";
