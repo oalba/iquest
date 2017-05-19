@@ -18,8 +18,18 @@
 }
 
 @font-face {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Medium;
+  src: url(../fonts/SupriaSans-Medium.otf)
+}
+
+@font-face {
+  font-family: SupriaSans-Light;
   src: url(../fonts/SupriaSans-Light.otf)
+}
+
+@font-face {
+  font-family: SupriaSans-Regular;
+  src: url(../fonts/SupriaSans-Regular.otf)
 }
 
 .test {
@@ -195,7 +205,7 @@
 }
 
 .font-medium, b {
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   font-weight: normal
 }
 
@@ -218,7 +228,7 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   font-weight: normal;
   line-height: 120%;
   margin-top: 15px;
@@ -252,7 +262,7 @@ p, ul {
 
 body {
   color: #1e1e1e;
-  font-family: Raleway-light, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: SupriaSans-Regular !important;
   position: relative;
   margin: 0
 }
@@ -469,7 +479,7 @@ html, body {
 .navigation .navbar li a {
   color: white;
   border-radius: 50%;
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   font-size: 16px;
   line-height: normal;
   text-align: center;
@@ -853,7 +863,7 @@ html, body {
 }
 
 .our-technology .more-technology {
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   font-size: 17px;
   display: block;
   text-align: center;
@@ -969,7 +979,7 @@ html, body {
 }
 
 #opening>.title, #more_than_10_years>.title {
-  font-family: Raleway-thin;
+  font-family: SupriaSans-Regular;
   width: 100%
 }
 
@@ -1007,7 +1017,7 @@ html, body {
 }
 
 #opening>.title .title1, #opening>.title .title2 {
-  font-family: Raleway-thin;
+  font-family: SupriaSans-Regular;
   font-weight: bold;
   line-height: 115%
 }
@@ -1308,7 +1318,7 @@ html, body {
 }
 
 #opening .reference .more-references {
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   font-size: 17px;
   display: block;
   text-align: center;
@@ -1382,7 +1392,7 @@ html, body {
 }
 
 .page .logo-content .info h2 {
-  font-family: Raleway-thin;
+  font-family: SupriaSans-Regular;
   font-weight: bold;
   opacity: 0.8;
   margin: 10px 0
@@ -1471,12 +1481,12 @@ html, body {
 
 .page .logo-content .iqw-nav .initial .text {
   font-size: 1vw;
-  font-family: Raleway-medium
+  font-family: SupriaSans-Medium
 }
 
 #iquest_logo .logo-content .text {
   font-size: 1.5vw;
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   text-align: center
 }
 
@@ -2077,7 +2087,7 @@ html, body {
 [class*='contact'] .box table tr td:first-child,
 [class*='kontakt'] .box table tr td:first-child {
   font-size: 15px;
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   text-align: right;
   width: 100px;
 }
@@ -2707,12 +2717,12 @@ body.posa .page-scroll-show .header{
 }
 
 .what-we-do>.title h1 {
-  font-family: Raleway-light;
+  font-family: SupriaSans-Light;
   font-size: 55px
 }
 
 .what-we-do>.title h2 {
-  font-family: Raleway-thin;
+  font-family: SupriaSans-Regular;
   font-size: 35px;
   line-height: 140%
 }
@@ -2819,20 +2829,20 @@ body.posa .page-scroll-show .header{
 }
 
 .h1-volne {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   font-size: 4em;
   text-align: right;
 }
 
 .volne-dev-h1 {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   font-size: 2.5em;
   color: #008780;
   margin-top: 40px;
 }
 
 .volne-text-p {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   font-size: 1.5em !important;
   font-weight: 600;
 }
@@ -2931,12 +2941,12 @@ body.posa .page-scroll-show .header{
   text-align: center;
   // font-size: 5em !important;
   font-size: 50px !important;
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   color: #008780;
 }
 
 .developers-p {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   text-align: center;
   // font-size: 2.5em !important;
   font-size: 25px !important;
@@ -2944,7 +2954,7 @@ body.posa .page-scroll-show .header{
 }
 
 .developers-p2 {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   text-align: center;
   // font-size: 2em !important;
   font-size: 20px !important;
@@ -2954,7 +2964,7 @@ body.posa .page-scroll-show .header{
 }
 
 .developers-h2 {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   color: #008780;
   // font-size: 4em !important;
   font-size: 40px !important;
@@ -2962,7 +2972,7 @@ body.posa .page-scroll-show .header{
 }
 
 .developers-list {
-  font-family: Supria-Sans;
+  font-family: SupriaSans-Light;
   // font-size: 1.5em !important;
   font-size: 18px !important;
 }
@@ -3585,14 +3595,14 @@ footer.footer .container .offset .inner form button[type="submit"] {
 
 [class*="not-only-money"]>.page-offset>.title h1,
 .success>.page-offset>.title h1 {
-  font-family: Raleway-light;
+  font-family: SupriaSans-Light;
   font-size: 55px;
   margin-top: 100px
 }
 
 [class*="not-only-money"]>.page-offset>.title h2,
 .success>.page-offset>.title h2 {
-  font-family: Raleway-thin;
+  font-family: SupriaSans-Regular;
   font-size: 35px;
   line-height: 140%;
   margin-top: 35px
@@ -3635,7 +3645,7 @@ footer.footer .container .offset .inner form button[type="submit"] {
 }
 
 [class*="not-only-money"] .box .text h3{
-  font-family: Raleway-light;
+  font-family: SupriaSans-Light;
   font-size: 42px;
   line-height: 140%;
   text-align: center;
@@ -3803,7 +3813,7 @@ footer.footer .container .offset .inner form button[type="submit"] {
   .icons .text {
     margin-top: 8px;
     padding-left: 0 !important;
-    font-family: Raleway-Light;
+    font-family: SupriaSans-Light;
     font-weight: 500;
     font-size: 30px;
     color: black;
@@ -4003,7 +4013,7 @@ footer.footer .container .offset .inner form button[type="submit"] {
 a.contact-bubble{
   color: white;
   border-radius: 50%;
-  font-family: Raleway-medium;
+  font-family: SupriaSans-Medium;
   font-size: 16px;
   line-height: normal;
   text-align: center !important;
@@ -4144,7 +4154,7 @@ a.contact-us.inline{
 .restyling .text{
   margin-top: 8px;
   padding-left: 0 !important;
-  font-family: Raleway-Light;
+  font-family: SupriaSans-Light;
   font-weight: 600;
   color: black;
 }
@@ -4250,10 +4260,10 @@ body.en .konzultace-zdarma{width: 320px;}
 
     h1.title1{
       font-size: 37px !important;
-      font-family: Raleway-light;
+      font-family: SupriaSans-Light;
     }
     h2.title2{
-      font-family: Raleway-light;
+      font-family: SupriaSans-Light;
       font-size: 22px !important;
       line-height: 130% !important;
     }
@@ -4644,7 +4654,7 @@ body.en .konzultace-zdarma{width: 320px;}
     }
 
     strong{
-      font-family: 'Raleway-medium';
+      font-family: 'SupriaSans-Medium';
     }
 
     a{
