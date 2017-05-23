@@ -277,6 +277,62 @@ function contact_bubble_init(){
 
 
 
+/** Swipe open/close menu start **/
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)){
+    $(document).bind("touchstart",empezar);
+    $(document).bind("touchend",terminar);
+  }
+
+  var eancho;
+  var ealto;
+  var sancho;
+  var salto;
+  var mancho;
+  var malto;
+  var stop = 0;
+  var stop2;
+  var mstop;
+
+  function empezar(event){
+    malto = 0;
+  	var touch = event.originalEvent.changedTouches[0];
+  	eancho = touch.pageX;
+  	ealto = touch.pageY;
+  	stop = $(this).scrollTop();
+  }
+
+  function terminar(event){
+  	var touch = event.originalEvent.changedTouches[0];
+  	stop2 = $(this).scrollTop();
+  	sancho = touch.pageX;
+  	salto = touch.pageY;
+  	mancho = sancho - eancho;
+  	malto = salto - ealto;
+  	mstop = stop - stop2;
+  	if (mstop < 0){
+	    mstop = mstop* -1;
+  	}
+  	if (malto < 0){
+	    malto = malto* -1;
+  	}
+  	if (mancho < 0){
+	    mancho = mancho* -1;
+  	}
+  	malto = malto*3;
+  	if (mancho > malto){
+  	  if (mancho > mstop){
+  	    if (eancho > sancho){
+  	    	$("#overlay, #menu").fadeOut(), event.preventDefault(), event.stopPropagation()
+  	      // $('.menu').removeClass('visible-menu');
+  	    } else if (sancho > eancho){
+  	    	$("#overlay, #menu").fadeIn(), event.preventDefault(), event.stopPropagation();
+  	      //$('.menu').addClass('visible-menu');
+  	    }
+  	  }
+  	}
+  }
+  /** Swipe open/close menu end **/
+
 
 
 
