@@ -321,10 +321,10 @@ function contact_bubble_init(){
   	malto = malto*3;
   	if (mancho > malto){
   	  if (mancho > mstop){
-  	    if (eancho > sancho){
+  	    if (eancho < sancho){
   	    	$("#overlay, #menu").fadeOut(), event.preventDefault(), event.stopPropagation()
   	      // $('.menu').removeClass('visible-menu');
-  	    } else if (sancho > eancho){
+  	    } else if (sancho < eancho){
   	    	$("#overlay, #menu").fadeIn(), event.preventDefault(), event.stopPropagation();
   	      //$('.menu').addClass('visible-menu');
   	    }
