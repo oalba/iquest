@@ -382,7 +382,8 @@
   }
   .navigation #logo {
     height: 90px;
-    margin-left: -20px
+    margin-left: -20px;
+    padding-top: 30px;
   }
   .navigation #logo_box {
     width: 200px;
@@ -407,7 +408,7 @@
   #opening address {
     font-size: 19px;
     line-height: 140%;
-    padding-top: 100px
+    // padding-top: 100px
   }
   #opening>.title {
     // padding-top: 210px;

@@ -64,24 +64,8 @@
 
 	<%= partial 'kinds_of_products' %>
 
-	<div class="reference">
-		<h3 class="text-center" data-aos="fade-up"><%= t('pages.main.examples_of_work') %>:</h3>
-		<div class="circles-box" data-aos="fade-up">
-			<% url = '/en' if I18n.locale == :en %>
-			<%= link_to '', "#{url}/reference/greenswan", :class => 'circle greenswan' %>
-			<%= link_to '', "#{url}/reference/cia-news", :class => 'circle cia-news' %>
-			<%= link_to '', "#{url}/reference/cemio", :class => 'circle cemio' %>
-			<%= link_to '', "#{url}/reference/ignum", :class => 'circle ignum' %>
-			<%= link_to '', "#{url}/reference/modry-andel", :class => 'circle modry-andel' %>
-			<%= link_to '', "#{url}/reference", :class => 'circle domenacz' %>
-			<%= link_to '', "#{url}/reference", :class => 'circle magistra' %>
-			<%= link_to '', "#{url}/reference", :class => 'circle avu' %>
-			<%= link_to '', "#{url}/reference/procare", :class => 'circle procare' %>
-		</div>
-		<% link_to t('urls.reference'), :class => 'more-references text-blue', :'data-aos' => 'fade-up' do %>
-      		<%= t('pages.main.more_references') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
-    	<% end  %>
-	</div>
+	<%= partial 'references' %>
+	
 	<%= partial 'our_technology' %>
 </div>
 
@@ -91,20 +75,36 @@
 			<div class="col-50">
 				<div class="offset">
 					<div class="title"><%= t('footer.we_are') %>:</div>
-					<div class="inner">
-						iQuest s.r.o.
-						<br /> Plaská 5
-						<br /> 150 00 Praha 5 - Malá strana
-						<br />
-						<br />
-						<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>
-						<br />
-						<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
-						<br />
-						<br />
-						<% link_to t('urls.contact') do %>
-							<%= t('footer.map') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
-						<% end  %>
+					<div class="col-50">
+						<div class="inner">
+							<u>Sídlo</u>
+							<br />iQuest s.r.o.
+							<br /> Plaská 5
+							<br /> 150 00 Praha 5 - Malá strana
+							<br />
+							<br />
+							<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>
+							<br />
+							<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
+							<br />
+							<br />
+							<% link_to t('urls.contact') do %>
+								<%= t('footer.map') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+							<% end  %>
+						</div>
+					</div>
+					<div class="col-50">
+						<div class="inner">
+							<u>Pobočka </u>
+							<br />iQuest s.r.o.
+							<br /> Cejl 494/25
+							<br /> 602 00 Brno-střed-Zábrdovice
+							<br />
+							<br />
+							<% link_to t('urls.contact') do %>
+								<%= t('footer.map') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+							<% end  %>
+						</div>
 					</div>
 				</div>
 			</div>

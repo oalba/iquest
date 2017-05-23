@@ -138,8 +138,10 @@
                 $('.navigation').data('size','small');
                 
                 $('#logo').stop().animate({
-                    height:'65px'
+                    height:'65px'//,
+                    // top: '0'
                 },600);
+                // $('#logo').css("padding-top", '0px');
 
                 $('a.big > .text').stop().animate({
                     top:'60%'
@@ -178,7 +180,8 @@
                 $('.navigation').data('size','big');
                 
                 $('#logo').stop().animate({
-                    height:'130px'
+                    height:'130px'//,
+                    // 'padding-top': '30px'
                 },600);
 
                 $('a.big > .text').stop().animate({

@@ -1,0 +1,18 @@
+<div class="reference">
+	<h3 class="text-center" data-aos="fade-up"><%= t('pages.main.examples_of_work') %>:</h3>
+	<div class="circles-box" data-aos="fade-up">
+		<% url = '/en' if I18n.locale == :en %>
+		<%= link_to '', "#{url}/reference/greenswan", :class => 'circle greenswan' %>
+		<%= link_to '', "#{url}/reference/cia-news", :class => 'circle cia-news' %>
+		<%= link_to '', "#{url}/reference/cemio", :class => 'circle cemio' %>
+		<%= link_to '', "#{url}/reference/ignum", :class => 'circle ignum' %>
+		<%= link_to '', "#{url}/reference/modry-andel", :class => 'circle modry-andel' %>
+		<%= link_to '', "#{url}/reference", :class => 'circle domenacz' %>
+		<%= link_to '', "#{url}/reference", :class => 'circle magistra' %>
+		<%= link_to '', "#{url}/reference", :class => 'circle avu' %>
+		<%= link_to '', "#{url}/reference/procare", :class => 'circle procare' %>
+	</div>
+	<% link_to t('urls.reference'), :class => 'more-references text-blue', :'data-aos' => 'fade-up' do %>
+    		<%= t('pages.main.more_references') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+  	<% end  %>
+</div>

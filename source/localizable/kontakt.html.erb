@@ -5,10 +5,12 @@ subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT79g0yz7iWCU1kZ4iNXaayEI_gcC_ZxA"></script>
 
 <div id="map-canvas"></div>
+<div id="map-canvas2"></div>
 <div class="box" data-aos="fade-right">
   <img class="logo" alt="Logo_hand" src="/images/logo_hand.png" />
   <h1>Kontaktujte nás</h1>
   <table>
+    <tr><th colspan=2>Sídlo</th></tr>
     <tr>
       <td>Adresa:</td>
       <td>iQuest s.r.o.
@@ -34,6 +36,15 @@ subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
     <tr>
       <td>Email:</td>
       <td><i class="fa fa-envelope-o"></i> <a href="mailto:iquest@iquest.cz">iquest@iquest.cz</a></td>
+    </tr>
+  </table>
+  <table>
+    <tr><th colspan=2>Pobočka</th></tr>
+    <tr>
+      <td>Adresa:</td>
+      <td>iQuest s.r.o.
+        <br />Cejl 494/25
+        <br />602 00 Brno-střed-Zábrdovice</td>
     </tr>
   </table>
   <p class="business-register">Společnost byla zapsána dne 15.11.2003 v obchodním rejstříku vedeném u Městského soudu v Praze, oddíl C., vložka 95959.</p>
@@ -156,4 +167,35 @@ subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
   }
 
   initialize();
+  
+  
+  var point2 = {
+    lat: 49.1976357,
+    lng: 16.6156609
+  };
+
+  function initialize2() {
+    var myLatLng = new google.maps.LatLng(point2.lat, point2.lng);
+    var gmap = new google.maps.Map(document.getElementById('map-canvas2'), {
+      zoom: 17,
+      center: myLatLng,
+      scrollwheel: false,
+      panControl: false,
+      mapTypeControl: false,
+      streetViewControl: false,
+      zoomControl: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoomControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_CENTER
+      }
+    });
+    var myMarker = new google.maps.Marker({
+      map: gmap,
+      position: myLatLng,
+      label: 'iQuest s.r.o.',
+      draggable: true
+    });
+  }
+
+  initialize2();
 </script>
