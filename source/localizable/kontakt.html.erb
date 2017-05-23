@@ -3,68 +3,72 @@ title: iQuest - Kontakt
 subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
 ---
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT79g0yz7iWCU1kZ4iNXaayEI_gcC_ZxA"></script>
+<div class="row kontakt-maps">
 
-<div id="map-canvas"></div>
-<div id="map-canvas2"></div>
-<div class="box" data-aos="fade-right">
-  <img class="logo" alt="Logo_hand" src="/images/logo_hand.png" />
-  <h1>Kontaktujte nás</h1>
-  <table>
-    <tr><th colspan=2>Sídlo</th></tr>
-    <tr>
-      <td>Adresa:</td>
-      <td>iQuest s.r.o.
-        <br />Plaská 5
-        <br />150 00 Praha 5</td>
-    </tr>
-    <tr>
-      <td>IČ:</td>
-      <td>27096483</td>
-    </tr>
-    <tr>
-      <td>DIČ:</td>
-      <td>CZ 27096483</td>
-    </tr>
-    <tr class="kontakt-telefon">
-      <td>Telefon:</td>
-      <td><a href="tel:+420774314763" class="c-phone"><i class="fa fa-phone"></i> +420 774 314 763</a></td>
-    </tr>
-    <tr>
-      <td>Mobil:</td>
-      <td><a href="tel:+420777314768" class="c-phone"><i class="fa fa-lg fa-mobile-phone"></i> +420 777 314 768</a></td>
-    </tr>
-    <tr>
-      <td>Email:</td>
-      <td><i class="fa fa-envelope-o"></i> <a href="mailto:iquest@iquest.cz">iquest@iquest.cz</a></td>
-    </tr>
-  </table>
-  <table>
-    <tr><th colspan=2>Pobočka</th></tr>
-    <tr>
-      <td>Adresa:</td>
-      <td>iQuest s.r.o.
-        <br />Cejl 494/25
-        <br />602 00 Brno-střed-Zábrdovice</td>
-    </tr>
-  </table>
-  <p class="business-register">Společnost byla zapsána dne 15.11.2003 v obchodním rejstříku vedeném u Městského soudu v Praze, oddíl C., vložka 95959.</p>
-  <form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form2" class="contact-form">
-    <input type="hidden" name="_next" value="https://www.iquest.cz/success" />
-    <input type="text" name="_gotcha" style="display:none" />
+<div class="col-2908">
+  <div class="box" data-aos="fade-right">
+    <img class="logo" alt="Logo_hand" src="/images/logo_hand.png" />
+    <h1>Kontaktujte nás</h1>
     <table>
+      <tr><th colspan=2>Sídlo</th></tr>
       <tr>
-        <td><label for="email">E-mail:</label></td>
-        <td><input type="text" name="email" id="email"></tr>
-      <tr>
-        <td><label for="message">Vzkaz:</label></td>
-        <td><textarea name="message" id="message">Dobrý den, &#010;rádi bychom poptali ...&#010;Tel.:&nbsp;</textarea></td>
+        <td>Adresa:</td>
+        <td>iQuest s.r.o.
+          <br />Plaská 5
+          <br />150 00 Praha 5</td>
       </tr>
       <tr>
-        <td></td>
-        <td><button type="submit" id="submit_kontakt_form" class="pull-right"><i class="fa fa-share"></i> Odešlete kontakt</button></td>
+        <td>IČ:</td>
+        <td>27096483</td>
+      </tr>
+      <tr>
+        <td>DIČ:</td>
+        <td>CZ 27096483</td>
+      </tr>
+      <tr class="kontakt-telefon">
+        <td>Telefon:</td>
+        <td><a href="tel:+420774314763" class="c-phone"><i class="fa fa-phone"></i> +420 774 314 763</a></td>
+      </tr>
+      <tr>
+        <td>Mobil:</td>
+        <td><a href="tel:+420777314768" class="c-phone"><i class="fa fa-lg fa-mobile-phone"></i> +420 777 314 768</a></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><i class="fa fa-envelope-o"></i> <a href="mailto:iquest@iquest.cz">iquest@iquest.cz</a></td>
       </tr>
     </table>
-  </form>
+    <table>
+      <tr><th colspan=2>Pobočka</th></tr>
+      <tr>
+        <td>Adresa:</td>
+        <td>iQuest s.r.o.
+          <br />Cejl 494/25
+          <br />602 00 Brno-střed-Zábrdovice</td>
+      </tr>
+    </table>
+    <p class="business-register">Společnost byla zapsána dne 15.11.2003 v obchodním rejstříku vedeném u Městského soudu v Praze, oddíl C., vložka 95959.</p>
+    <form action="//formspree.io/vyvojari@iquest.cz" method="POST" id="contact_form2" class="contact-form">
+      <input type="hidden" name="_next" value="https://www.iquest.cz/success" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <table>
+        <tr>
+          <td><label for="email">E-mail:</label></td>
+          <td><input type="text" name="email" id="email"></tr>
+        <tr>
+          <td><label for="message">Vzkaz:</label></td>
+          <td><textarea name="message" id="message">Dobrý den, &#010;rádi bychom poptali ...&#010;Tel.:&nbsp;</textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit" id="submit_kontakt_form" class="pull-right"><i class="fa fa-share"></i> Odešlete kontakt</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<div class="col-35 kontakt-maps"><div id="map-canvas"></div></div>
+<div class="col-offset-02 col-35 kontakt-maps"><div id="map-canvas2"></div></div>
 </div>
 
 <%= partial 'footer' %>

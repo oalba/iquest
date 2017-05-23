@@ -314,6 +314,14 @@ html, body {
   clear: both
 }
 
+.col-offset-02 {
+  margin-left: 0.2%;
+}
+
+.col-offset-1 {
+  margin-left: 1%;
+}
+
 .col-offset-5 {
   margin-left: 5%;
 }
@@ -351,6 +359,11 @@ html, body {
 .row .col-25 {
   float: left;
   width: 25%
+}
+
+.row .col-2908 {
+  float: left;
+  width: 29.8%
 }
 
 .row .col-30 {
@@ -2045,19 +2058,24 @@ html, body {
 [class*='contact'] #map-canvas,
 [class*='kontakt'] #map-canvas {
   width: 100%;
-  height: 50%
+  height: 100%
 }
+
 [class*='contact'] #map-canvas2,
 [class*='kontakt'] #map-canvas2 {
   width: 100%;
-  height: 50%
+  height: 100%
+}
+
+.kontakt-maps {
+  height: 100%;
 }
 
 [class*='contact'] .box,
 [class*='kontakt'] .box {
   background-color: rgba(255, 255, 255, 0.85);
   width: 400px;
-  position: absolute;
+  // position: absolute;
   top: 20px;
   left: 100px;
   bottom: 20px;
