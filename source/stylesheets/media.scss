@@ -372,10 +372,25 @@
   .row {
     width: 100% !important
   }
-  .row .col-25, .row .col-30, .row .col-33, .row .col-40, .row .col-50, .row .col-60, .row .col-70 {
+  .row .col-25, .row .col-2908, .row .col-30, .row .col-30vw, .row .col-33, .row .col-35, .row .col-35vw, .row .col-40, .row .col-50, .row .col-60, .row .col-70 {
     width: 100% !important;
     overflow: hidden;
   }
+  
+  .col-offset-02 {
+    margin-left: 0%;
+  }
+  
+  .kontakt-maps {
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+  }
+  
+  .kontakts {
+    display: block;
+  }
+  
   .navigation {
     height: 80px;
     z-index: 3
@@ -603,7 +618,7 @@
     left: 0
   }
   [class*='kontakt'] #map-canvas {
-    display: none
+    // display: none
   }
   [class*='kontakt'] .box {
     background-color: white;

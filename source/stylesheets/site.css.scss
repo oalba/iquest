@@ -361,9 +361,9 @@ html, body {
   width: 25%
 }
 
-.row .col-2908 {
+.row .col-30vw {
   float: left;
-  width: 29.8%
+  width: 30vw;
 }
 
 .row .col-30 {
@@ -2069,12 +2069,19 @@ html, body {
 
 .kontakt-maps {
   height: 100%;
+  width: 34vw !important;
+  box-sizing: border-box;
+  padding: 0 1px;
+}
+
+.kontakts {
+  height: 100%;
 }
 
 [class*='contact'] .box,
 [class*='kontakt'] .box {
   background-color: rgba(255, 255, 255, 0.85);
-  width: 400px;
+  // width: 100%;
   // position: absolute;
   top: 20px;
   left: 100px;

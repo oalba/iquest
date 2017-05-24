@@ -3,9 +3,9 @@ title: iQuest - Kontakt
 subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
 ---
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT79g0yz7iWCU1kZ4iNXaayEI_gcC_ZxA"></script>
-<div class="row kontakt-maps">
+<div class="row kontakts">
 
-<div class="col-2908">
+<div class="col-30vw">
   <div class="box" data-aos="fade-right">
     <img class="logo" alt="Logo_hand" src="/images/logo_hand.png" />
     <h1>Kontaktujte nás</h1>
@@ -68,7 +68,7 @@ subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
   </div>
 </div>
 <div class="col-35 kontakt-maps"><div id="map-canvas"></div></div>
-<div class="col-offset-02 col-35 kontakt-maps"><div id="map-canvas2"></div></div>
+<div class="col-35 kontakt-maps"><div id="map-canvas2"></div></div>
 </div>
 
 <%= partial 'footer' %>
@@ -179,10 +179,10 @@ subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
   };
 
   function initialize2() {
-    var myLatLng = new google.maps.LatLng(point2.lat, point2.lng);
-    var gmap = new google.maps.Map(document.getElementById('map-canvas2'), {
+    var myLatLng2 = new google.maps.LatLng(point2.lat, point2.lng);
+    var gmap2 = new google.maps.Map(document.getElementById('map-canvas2'), {
       zoom: 17,
-      center: myLatLng,
+      center: myLatLng2,
       scrollwheel: false,
       panControl: false,
       mapTypeControl: false,
@@ -193,9 +193,9 @@ subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
         position: google.maps.ControlPosition.RIGHT_CENTER
       }
     });
-    var myMarker = new google.maps.Marker({
-      map: gmap,
-      position: myLatLng,
+    var myMarker2 = new google.maps.Marker({
+      map: gmap2,
+      position: myLatLng2,
       label: 'iQuest s.r.o.',
       draggable: true
     });
