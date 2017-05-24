@@ -62,6 +62,11 @@ subtitle: Konzultujte Váš projekt se zkušenými odborníky.
 						<span class="sub-title">Plaská 5, Praha 5 - Malá Strana</span>
 						<a href="/kontakt" class="submit">ZOBRAZIT MAPU</a>
 					</div>
+					<div class="cont cont2" data-aos="fade-up">
+						<h4>Navštivte nás</h4>
+						<span class="sub-title">Cejl 494/25, Brno-střed-Zábrdovice</span>
+						<a href="/kontakt" class="submit">ZOBRAZIT MAPU</a>
+					</div>
 				</div>
 				<div class="col col3">
 					<div class="cont" data-aos="fade-up">
@@ -107,18 +112,36 @@ function size_change() {
 			<div class="col-50">
 				<div class="offset">
 					<div class="title">Jsme:</div>
-					<div class="inner">
-						iQuest s.r.o.
-						<br /> Plaská 5
-						<br /> 150 00 Praha 5 - Malá strana
-						<br />
-						<br />
-						<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>
-						<br />
-						<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
-						<br />
-						<br />
-						<a href="/kontakt">mapa <i class="fa fa-lg fa-arrow-circle-right"></i></a>
+					<div class="col-50">
+						<div class="inner">
+							<u>Sídlo</u>
+							<br />iQuest s.r.o.
+							<br /> Plaská 5
+							<br /> 150 00 Praha 5 - Malá strana
+							<br />
+							<br />
+							<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>
+							<br />
+							<i class="fa fa-envelope"></i> <a href="mailto:vyvojari@iquest.cz">vyvojari@iquest.cz</a>
+							<br />
+							<br />
+							<% link_to t('urls.contact') do %>
+								<%= t('footer.map') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+							<% end  %>
+						</div>
+					</div>
+					<div class="col-50">
+						<div class="inner">
+							<u>Pobočka </u>
+							<br />iQuest s.r.o.
+							<br /> Cejl 494/25
+							<br /> 602 00 Brno-střed-Zábrdovice
+							<br />
+							<br />
+							<% link_to t('urls.contact') do %>
+								<%= t('footer.map') %> <i class="fa fa-lg fa-arrow-circle-right"></i>
+							<% end  %>
+						</div>
 					</div>
 				</div>
 			</div>
