@@ -67,8 +67,26 @@ subtitle: Máte jakýkoliv dotaz? Kontaktujte nás telefonicky či e-mailem.
     </form>
   </div>
 </div>
-<div class="col-35 kontakt-maps"><div id="map-canvas"></div><img class="img-maps" src="/images/Praha.jpg"></div>
-<div class="col-35 kontakt-maps"><div id="map-canvas2"></div><img class="img-maps" src="/images/Brno.png"></div>
+<div class="col-35 kontakt-maps">
+  <div id="map-canvas"></div>
+  <div class="img-maps" style="background-image: url('/images/Praha.jpg');">
+    <p class="add-img"><span class="town-img">Praha</span><br>
+    Plaská 5
+    <br>150 00 Praha 5
+    </p>
+    <!--<img src="/images/Praha.jpg">-->
+  </div>
+</div>
+<div class="col-35 kontakt-maps">
+  <div id="map-canvas2"></div>
+  <div class="img-maps" style="background-image: url('/images/Brno.png');">
+    <p class="add-img">
+      <span class="town-img">Brno</span><br>
+      Cejl 494/25 <br>602 00 Brno-střed
+    </p>
+    <!--<img src="/images/Brno.png">-->
+  </div>
+</div>
 </div>
 
 <%= partial 'footer' %>
