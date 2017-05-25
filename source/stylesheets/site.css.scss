@@ -2067,6 +2067,10 @@ html, body {
   height: 100%
 }
 
+.kontakt-btn {
+  width: 145px !important;
+}
+
 .kontakt-maps {
   height: calc(100vh - 166px);
   width: 34vw !important;
@@ -3919,8 +3923,8 @@ footer.footer .container .offset .inner form button[type="submit"] {
     // box-sizing: border-box;
     // text-align: center;
     display: inline-block;
-    border: 2px solid #4590af;
-    background-color: #4590af;
+    border: 2px solid #418f8f;
+    background-color: #418f8f;
     // height: 160px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
